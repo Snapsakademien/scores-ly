@@ -12,7 +12,7 @@ Programmatic representation of classical songs (TTBB). These songs are in the pu
 
 ## How
 
-The files are written with (Lilypond)[http://lilypond.org/]. It is a good idea to separate the parts when writing so that the MIDI files can be correctly generated.
+The files are written with [Lilypond](http://lilypond.org/). It is a good idea to separate the parts when writing so that the MIDI files can be correctly generated.
 
 ## Ideas
 - Make good templates for generating song books
