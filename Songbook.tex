@@ -13,191 +13,128 @@
 
 
 \begin{document}
-
-\includepdfset{pagecommand=\thispagestyle{plain}}
-\setcounter{secnumdepth}{-1}
-\setlength{\footskip}{70pt}
-\pagenumbering{gobble}
-
-\begin{titlepage} % Suppresses headers and footers on the title page
 	
-	\centering % Centre everything on the title page
+	\includepdfset{pagecommand=\thispagestyle{plain}}
+	\setcounter{secnumdepth}{-1}
+	\setlength{\footskip}{70pt}
+	\pagenumbering{gobble}
 	
-	%------------------------------------------------
-	%	Top rules
-	%------------------------------------------------
-	
-	\rule{\textwidth}{1pt} % Thick horizontal rule
-	
-	\vspace{2pt}\vspace{-\baselineskip} % Whitespace between rules
-	
-	\rule{\textwidth}{0.4pt} % Thin horizontal rule
-	
-	\vspace{0.1\textheight} % Whitespace between the top rules and title
-	
-	%------------------------------------------------
-	%	Title
-	%------------------------------------------------
-	
-%	\textcolor{Black}{ % Red font color
+	\begin{titlepage} % Suppresses headers and footers on the title page
+		
+		\centering % Centre everything on the title page
+		
+		%------------------------------------------------
+		%	Top rules
+		%------------------------------------------------
+		
+		\rule{\textwidth}{1pt} % Thick horizontal rule
+		
+		\vspace{2pt}\vspace{-\baselineskip} % Whitespace between rules
+		
+		\rule{\textwidth}{0.4pt} % Thin horizontal rule
+		
+		\vspace{0.1\textheight} % Whitespace between the top rules and title
+		
+		%------------------------------------------------
+		%	Title
+		%------------------------------------------------
+		
+		%	\textcolor{Black}{ % Red font color
 		{\Huge S{\AA}NGBOK}\\[0.5\baselineskip] % Title line 1
 		{\large f{\"o}r}\\[0.5\baselineskip] % Title line 1
-		{\Huge Kristinehamns Mansk{\"o}r} % Title line 3
-%	}
+		{\Huge Mansk{\"o}r} % Title line 3
+		%	}
+		
+		\vspace{0.025\textheight} % Whitespace between the title and short horizontal rule
+		
+		\rule{0.3\textwidth}{0.4pt} % Short horizontal rule under the title
+		
+		\vspace{0.1\textheight} % Whitespace between the thin horizontal rule and the author name
+		
+		%------------------------------------------------
+		%	Author
+		%------------------------------------------------
+		
+		%	{\Large \textsc{Snapsakademien}} % Author name
+		
+		\vfill % Whitespace between the author name and publisher
+		
+		%------------------------------------------------
+		%	Publisher
+		%------------------------------------------------
+		
+		%	{\large\textsc{the publisher}} % Publisher
+		
+		%	\vspace{0.1\textheight} % Whitespace under the publisher text
+		
+		%------------------------------------------------
+		%	Bottom rules
+		%------------------------------------------------
+		
+		\rule{\textwidth}{0.4pt} % Thin horizontal rule
+		
+		\vspace{2pt}\vspace{-\baselineskip} % Whitespace between rules
+		
+		\rule{\textwidth}{1pt} % Thick horizontal rule
+		
+	\end{titlepage}
 	
-	\vspace{0.025\textheight} % Whitespace between the title and short horizontal rule
+	\pagenumbering{gobble} %tar bort sidnumreringen på sidan innan ToC men också den blanka sidan som annars blir efter framsidan. Vet inte varför.
+	\tableofcontents
+	%\newpage
 	
-	\rule{0.3\textwidth}{0.4pt} % Short horizontal rule under the title
+	\newpage
 	
-	\vspace{0.1\textheight} % Whitespace between the thin horizontal rule and the author name
+	\pagenumbering{arabic}
+	\addcontentsline{toc}{section}{Ack V{\"a}rmland du sk{\"o}na}
+	\includepdf[pages=-]{./lilypond/Varmlandsvisan.pdf}
 	
-	%------------------------------------------------
-	%	Author
-	%------------------------------------------------
+	\addcontentsline{toc}{section}{Ave Maria}
+	\includepdf[pages=-]{./lilypond/aveMaria.pdf}
 	
-%	{\Large \textsc{Joakim Sandstr{\"o}m}} % Author name
+	\addcontentsline{toc}{section}{Bort allt vad oro g{\"o}r}
+	\includepdf[pages=-]{./lilypond/BortAllt.pdf}
 	
-	\vfill % Whitespace between the author name and publisher
+	\addcontentsline{toc}{section}{En sommarafton}
+	\includepdf[pages=-]{./lilypond/Sommarafton.pdf}
 	
-	%------------------------------------------------
-	%	Publisher
-	%------------------------------------------------
+	\addcontentsline{toc}{section}{Fj{\"a}riln vingad}
+	\includepdf[pages=-]{./lilypond/Fjariln.pdf}
 	
-%	{\large\textsc{the publisher}} % Publisher
+	\addcontentsline{toc}{section}{Integer vit{\ae}}
+	\includepdf[pages=-]{./lilypond/IntegerVitae.pdf}
 	
-%	\vspace{0.1\textheight} % Whitespace under the publisher text
+	\addcontentsline{toc}{section}{Island}
+	\includepdf[pages=-]{./lilypond/Island.pdf}
 	
-	%------------------------------------------------
-	%	Bottom rules
-	%------------------------------------------------
+	\addcontentsline{toc}{section}{Kungshymnen}
+	\includepdf[pages=-]{./lilypond/Kungshymnen.pdf}
 	
-	\rule{\textwidth}{0.4pt} % Thin horizontal rule
+	\addcontentsline{toc}{section}{K{\"a}raste Br{\"o}der}
+	\includepdf[pages=-]{./lilypond/KarasteBroder.pdf}
 	
-	\vspace{2pt}\vspace{-\baselineskip} % Whitespace between rules
+	\addcontentsline{toc}{section}{Mets{\"a}miehen juomalaulu}
+	\includepdf[pages=-]{./lilypond/Metsamiehen.pdf}
 	
-	\rule{\textwidth}{1pt} % Thick horizontal rule
+	\addcontentsline{toc}{section}{Pastime with Good Company}
+	\includepdf[pages=-]{./lilypond/Pastime.pdf}
 	
-\end{titlepage}
-
-\pagenumbering{gobble} %tar bort sidnumreringen på sidan innan ToC men också den blanka sidan som annars blir efter framsidan. Vet inte varför.
-\tableofcontents
-%\newpage
-
-\newpage
-
-\pagenumbering{arabic}
-\addcontentsline{toc}{section}{Abide with me}
-\includepdf[pages=-]{./lilypond/AbideWithMe.pdf}
-
-\addcontentsline{toc}{section}{Ack V{\"a}rmland du sk{\"o}na}
-\includepdf[pages=-]{./lilypond/Varmlandsvisan.pdf}
-
-\addcontentsline{toc}{section}{Ave Maria}
-\includepdf[pages=-]{./lilypond/aveMaria.pdf}
-
-\addcontentsline{toc}{section}{Bort allt vad oro g{\"o}r}
-\includepdf[pages=-]{./lilypond/BortAllt.pdf}
-
-\addcontentsline{toc}{section}{Det {\"a}r en ros utsprungen}
-\includepdf[pages=-]{./lilypond/DetArEnRos.pdf}
-
-\addcontentsline{toc}{section}{En sommarafton}
-\includepdf[pages=-]{./lilypond/Sommarafton.pdf}
-
-\addcontentsline{toc}{section}{Fj{\"a}riln vingad}
-\includepdf[pages=-]{./lilypond/Fjariln.pdf}
-
-\addcontentsline{toc}{section}{Fr{\`e} O}
-\includepdf[pages=-]{./lilypond/FreO.pdf}
-
-\addcontentsline{toc}{section}{Gloucestershire Wassail}
-\includepdf[pages=-]{./lilypond/Wassail.pdf}
-
-\addcontentsline{toc}{section}{Gl{\"a}ns {\"o}ver sj{\"o} och strand}
-\includepdf[pages=-]{./lilypond/GlansOver.pdf}
-
-\addcontentsline{toc}{section}{G{\aa}, Sion, din konung att m{\"o}ta}
-\includepdf[pages=-]{./lilypond/gaSion.pdf}
-
-\addcontentsline{toc}{section}{Hej Tomtegubbar}
-\includepdf[pages=-]{./lilypond/hejTomtegubbar.pdf}
-
-\addcontentsline{toc}{section}{Heyr, himna smi{\dh}ur}
-\includepdf[pages=-]{./lilypond/HeyrHimna.pdf}
-
-\addcontentsline{toc}{section}{H{\"a}r {\"a}r gudagott att vara}
-\includepdf[pages=-]{./lilypond/HarArGudagott.pdf}
-
-\addcontentsline{toc}{section}{Integer vit{\ae}}
-\includepdf[pages=-]{./lilypond/IntegerVitae.pdf}
-
-\addcontentsline{toc}{section}{Island}
-\includepdf[pages=-]{./lilypond/Island.pdf}
-
-\addcontentsline{toc}{section}{Kom}
-\includepdf[pages=-]{./lilypond/Kom.pdf}
-
-\addcontentsline{toc}{section}{Kungshymnen}
-\includepdf[pages=-]{./lilypond/Kungshymnen.pdf}
-
-\addcontentsline{toc}{section}{Kyrie}
-\includepdf[pages=-]{./lilypond/KyrieTurnpu.pdf}
-
-\addcontentsline{toc}{section}{K{\"a}raste Br{\"o}der}
-\includepdf[pages=-]{./lilypond/KarasteBroder.pdf}
-
-\addcontentsline{toc}{section}{Leende guldbruna {\"O}gon}
-\includepdf[pages=-]{./lilypond/Leende.pdf}
-
-\addcontentsline{toc}{section}{Let me call you Sweetheart}
-\includepdf[pages=-]{./lilypond/LetMe.pdf}
-
-\addcontentsline{toc}{section}{Livet {\"a}r h{\"a}rligt}
-\includepdf[pages=-]{./lilypond/Livet.pdf}
-
-\addcontentsline{toc}{section}{Mets{\"a}miehen juomalaulu}
-\includepdf[pages=-]{./lilypond/Metsamiehen.pdf}
-
-\addcontentsline{toc}{section}{Pastime with Good Company}
-\includepdf[pages=-]{./lilypond/Pastime.pdf}
-
-\addcontentsline{toc}{section}{R{\"o}vars{\aa}ngen}
-\includepdf[pages=-]{./lilypond/Rovarsangen.pdf}
-
-\addcontentsline{toc}{section}{Sverige}
-\includepdf[pages=-]{./lilypond/Sverige.pdf}
-
-\addcontentsline{toc}{section}{S{\aa} lunka vi s{\aa} sm{\aa}ningom}
-\includepdf[pages=-]{./lilypond/SaLunkaVi.pdf}
-
-\addcontentsline{toc}{section}{S{\aa}ngarfanan}
-\includepdf[pages=-]{./lilypond/Sangarfanan.pdf}
-
-\addcontentsline{toc}{section}{Tango f{\"o}r Kristin}
-\includepdf[pages=-]{./lilypond/Tango.pdf}
-
-\addcontentsline{toc}{section}{Till {\"O}sterland}
-\includepdf[pages=-]{./lilypond/TillOsterland.pdf}
-
-\addcontentsline{toc}{section}{Uti v{\aa}r hage}
-\includepdf[pages=-]{./lilypond/UtiVarHage.pdf}
-
-\addcontentsline{toc}{section}{Visa p{\aa} Lucia-dagen}
-\includepdf[pages=-]{./lilypond/visaPaLucia.pdf}
-
-\addcontentsline{toc}{section}{V{\"a}nskap}
-\includepdf[pages=-]{./lilypond/Vanskap.pdf}
-
-\addcontentsline{toc}{section}{V{\"a}rmlandspojk}
-\includepdf[pages=-]{./lilypond/Varmlandspojk.pdf}
-
-\addcontentsline{toc}{section}{W:6-s{\aa}ngen}
-\includepdf[pages=-]{./lilypond/W6sangen.pdf}
-
-\addcontentsline{toc}{section}{Wade in the water}
-\includepdf[pages=-]{./lilypond/Wade.pdf}
-
-\addcontentsline{toc}{section}{{\"A}r jag f{\"o}dd s{\aa} vill jag leva}
-\includepdf[pages=-]{./lilypond/ArJagFodd.pdf}
-
+	\addcontentsline{toc}{section}{Students{\aa}ngen}
+	\includepdf[pages=-]{./lilypond/Studentsangen.pdf}
+	
+	\addcontentsline{toc}{section}{Sverige}
+	\includepdf[pages=-]{./lilypond/Sverige.pdf}
+	
+	\addcontentsline{toc}{section}{S{\aa} lunka vi s{\aa} sm{\aa}ningom}
+	\includepdf[pages=-]{./lilypond/SaLunkaVi.pdf}
+	
+	\addcontentsline{toc}{section}{S{\aa}ngarfanan}
+	\includepdf[pages=-]{./lilypond/Sangarfanan.pdf}
+	
+	\addcontentsline{toc}{section}{Till {\"O}sterland}
+	\includepdf[pages=-]{./lilypond/TillOsterland.pdf}
+	
+	\addcontentsline{toc}{section}{{\"A}r jag f{\"o}dd s{\aa} vill jag leva}
+	\includepdf[pages=-]{./lilypond/ArJagFodd.pdf}
+	
 \end{document}
