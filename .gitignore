@@ -1,4 +1,8 @@
 *.pdf
 *.mp3
 *.mid
+*.aux
+*.log
+*.synctex.gz
+*.toc
 /copyright
