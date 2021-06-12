@@ -31,9 +31,9 @@ tOne = \relative c {
 	\override Voice.Rest #'staff-position = #0
 	\partial 2
 	e2\fermata
-	r1\fermata
-	r1
-	r1
+	R1\fermata
+	R1
+	R1
 	d'4 d4 d4 d4
 	r4 b4 g4 fis4
 
@@ -61,7 +61,7 @@ bass = \relative c {
 	r1\fermata
 	\repeat unfold 3 {e4 b4 e4 b4}
 	r4 b4 g4 fis4
-	
+
 	e'1
 	g4 d4 g4 d8 fis8
 	e1
@@ -72,7 +72,7 @@ tOneLyric = \lyricmode {
 	Heya
 	Höj nu gla -- set
 	skål, skål, skål
-	
+
 	in i norr -- lands -- skogs -- be -- kläd -- da
 	djup,
 }
@@ -88,7 +88,7 @@ tTwoLyric = \lyricmode {
 }
 
 bassLyric = \lyricmode {
-	Heya 
+	Heya
 	\repeat unfold 3 {höj nu gla -- set}
 	skål, skål, skål
 
@@ -113,7 +113,6 @@ bassLyric = \lyricmode {
 				\dynamicUp
 			>>
 			\new Voice = "tOne" <<
-				\voiceOne
 				\tOne
 			>>
 			\new Lyrics {
@@ -128,7 +127,6 @@ bassLyric = \lyricmode {
 			\global
 			\clef "treble_8"
 			\new Voice = "tTwo" <<
-				\voiceTwo
 				\tTwo
 			>>
 			\new Lyrics {
@@ -143,7 +141,6 @@ bassLyric = \lyricmode {
 				\dynamicDown
 			>>
 			\new Voice = "bass" <<
-				\voiceOne
 				\bass
 			>>
 
