@@ -1,5 +1,5 @@
 tempoMark = {
-	\tempo 4 = 48
+	\tempo 2 = 44
 }
 
 \score {
@@ -66,17 +66,17 @@ tempoMark = {
 			\new Staff <<
 				\midiVolumeMax
 				\global
-				\new Voice = "tOne" <<
+				\new Voice = "tTwo" <<
 					\tTwo
 				>>
 			>>
 			\new Staff = "staff" <<
 				\midiVolumeMin
 				\global
-				\new Voice = "tTwo" <<
+				\new Voice = "tOne" <<
 					\tOne
 				>>
-				\new Voice = "bOne" <<
+				\new Voice = "tOne" <<
 					\bOne
 				>>
 				\new Voice = "bTwo" <<
@@ -95,7 +95,7 @@ tempoMark = {
 			\new Staff <<
 				\midiVolumeMax
 				\global
-				\new Voice = "tOne" <<
+				\new Voice = "bOne" <<
 					\bOne
 				>>
 			>>
@@ -105,7 +105,7 @@ tempoMark = {
 				\new Voice = "tTwo" <<
 					\tTwo
 				>>
-				\new Voice = "bOne" <<
+				\new Voice = "tOne" <<
 					\tOne
 				>>
 				\new Voice = "bTwo" <<
@@ -124,7 +124,7 @@ tempoMark = {
 			\new Staff <<
 				\midiVolumeMax
 				\global
-				\new Voice = "tOne" <<
+				\new Voice = "bTwo" <<
 					\bTwo
 				>>
 			>>
@@ -137,7 +137,7 @@ tempoMark = {
 				\new Voice = "bOne" <<
 					\bOne
 				>>
-				\new Voice = "bTwo" <<
+				\new Voice = "tOne" <<
 					\tOne
 				>>
 			>>

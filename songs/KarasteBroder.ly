@@ -22,7 +22,7 @@ global = {
 	\time 3/4
 }
 
-\include "includeFiles/midiVolume.ly"
+\include "../Include/midiVolume.ly"
 
 %KÄRASTE BRÖDER
 
@@ -460,4 +460,4 @@ tTwoLyricTwo = \lyricmode {
 		}
 }  % End score
 
-\include "includeFiles/midiLeende.ly"
+\include "../Include/midiLeende.ly"

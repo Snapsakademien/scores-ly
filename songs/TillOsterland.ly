@@ -22,7 +22,7 @@ global = {
 	\time 4/4
 }
 
-\include "includeFiles/midiVolume.ly"
+\include "../Include/midiVolume.ly"
 
 %TILL ÖSTERLAND
 
@@ -215,4 +215,4 @@ bTwoLyricTwo = \lyricmode {
 	}
 }  % End score
 
-\include "includeFiles/midiTillOsterland.ly"
+\include "../Include/midiTillOsterland.ly"

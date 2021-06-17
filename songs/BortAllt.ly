@@ -25,7 +25,7 @@ global = {
 	\time 3/4
 }
 
-\include "includeFiles/midiVolume.ly"
+\include "../Include/midiVolume.ly"
 
 %BORT ALLT VAD ORO
 
@@ -294,4 +294,4 @@ tTwoLyricTwo = \lyricmode {
 	}
 }  % End score
 
-\include "includeFiles/midiBortAllt.ly"
+\include "../Include/midiBortAllt.ly"

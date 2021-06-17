@@ -21,7 +21,7 @@ global = {
 	\key bes \major
 }
 
-\include "includeFiles/midiVolume.ly"
+\include "../Include/midiVolume.ly"
 
 %ÄR JAG FÖDD SÅ VILL JAG LEVA
 
@@ -257,4 +257,4 @@ bTwoLyricTwo = \lyricmode {
 	}
 }  % End score
 
-\include "includeFiles/midiArJagFodd.ly"
+\include "../Include/midiArJagFodd.ly"

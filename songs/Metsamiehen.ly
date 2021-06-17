@@ -22,7 +22,7 @@ global = {
 	\key d \major
 }
 
-\include "includeFiles/midiVolume.ly"
+\include "../Include/midiVolume.ly"
 
 %METSÄMIEHEN JUOMALAULU
 
@@ -373,4 +373,4 @@ bOneLyricOne = \lyricmode {
 	}
 }  % End score
 
-\include "includeFiles/midiMetsamiehen.ly"
+\include "../Include/midiMetsamiehen.ly"

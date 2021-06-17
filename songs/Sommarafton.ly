@@ -21,7 +21,7 @@ global = {
 	\key as \major
 }
 
-\include "includeFiles/midiVolume.ly"
+\include "../Include/midiVolume.ly"
 
 %EN SOMMARAFTON
 
@@ -263,4 +263,4 @@ tOneLyricTwo = \lyricmode {
 	}
 }  % End score
 
-\include "includeFiles/midiSommarafton.ly"
+\include "../Include/midiSommarafton.ly"

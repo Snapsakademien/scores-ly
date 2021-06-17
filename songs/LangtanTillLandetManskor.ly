@@ -24,7 +24,7 @@ global = {
 	\time 4/4
 }
 
-\include "includeFiles/midiVolume.ly"
+\include "../Include/midiVolume.ly"
 
 %LÄNGTAN TILL LANDET
 
@@ -243,4 +243,4 @@ LyricTwo = \lyricmode {
 	}
 }  % End score
 
-\include "includeFiles/LangtanTillLandet.ly"
+\include "../Include/midiLangtanTillLandet.ly"
