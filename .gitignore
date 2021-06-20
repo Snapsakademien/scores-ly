@@ -1,6 +1,8 @@
 *.pdf
 *.mp3
 *.mid
+*.midi
+*.tmp
 *.aux
 *.log
 *.synctex.gz
