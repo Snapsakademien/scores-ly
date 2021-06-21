@@ -28,75 +28,84 @@ global = {
 
 tenorDynamics = \relative c {
 	\override DynamicLineSpanner.staff-padding = #3
-	s1\f
-	s1 | s1 | s1
-	s4\p\< s4 s2\!
+	s1\f |
+	s1 | \break
+	s1 |
+	s1 |
 
-	s4\< s4 s2\!
-	s4\f s2.
+	s4\p\< s4 s2\! \break
+	s4\< s4 s2\! |
+	s4\f s2. |
+	s1 | \break
+
+	s4\mf s2. |
+	s1 |
+	s2 s4\ff s4 |
 	s1
-	s4\mf s2.
-	s1
-	s2 s4\ff s4
-	s1\fermata
+	\bar "|."
 }
 
 
 bOneDynamics = \relative c {
 	\override DynamicLineSpanner.staff-padding = #3
-	s1 | s1 | s1 |s1 
-	s4\p\< s4 s2 \!
-	s4\< s4 s2 \!
+	s1 | s1 | s1 |s1
+	s4\p\< s4 s2\!
+	s4\< s4 s2\!
 
 }
 
 
 bTwoDynamics = \relative c {
 	\override DynamicLineSpanner.staff-padding = #3
+
 	s1 | s1 | s1 | s1
+
 	s2 s8\mf s4.
 	s1
 	s1\f
+
 	s2 s8\mf s4.
 	s1 | s1
 	s2 s2\ff
 
 }
 
-tOne = \relative c {
-	%\set beamExceptions = #'()
-	%\set beatStructure = #'(1 1 1 1)
+tOne = \relative c' {
+	\override Voice.Rest #'staff-position = #0
 	\autoBeamOff
 
-	cis'4 e4 a,4. cis8
+	\tempo 4 = 112
+	cis4 e4 a,4. cis8
 	b8 b16 b16 b8 b8 cis8 a8 a4
 	cis4 e4 a,4. cis8
 	b8 b16 b16 b8 b8 a2
+
 	b4 d4 b2
 	cis4 e4 cis2
-	d4 fis4 a,4 d4
+	dis4 fis4 a4 dis,4
 	e8 r16 e16 e4 r2
+
 	cis4 e4 cis2
-	d4 fis4 d4 fis4
+	d4^\< fis4\! d4 fis4
 	e2 gis4 gis4
-	a1
-	
+	a1\fermata
+
 }
 
-tTwo = \relative c {
-	%\set beamExceptions = #'()
-	%\set beatStructure = #'(1 1 1 1)
+tTwo = \relative c' {
+	\override Voice.Rest #'staff-position = #0
 	\autoBeamOff
 
-
-	a'4 cis4 a4. a8
+	a4 cis4 a4. a8
 	gis8 gis16 gis16  gis8 gis8 a8 a8 a4
 	a4 cis4 a4. a8
 	gis8 gis16 gis16  gis8  gis8 a2
+
 	gis4 b4 gis2
 	a4 cis4 a2
-	b4 b4 d4 b4
+	b4 b4 dis4 b4
 	b8 r16 b16 b4 r2
+
 	a4 cis4 a2
 	b4 d4 b4 b4
 	cis2 e4 e4
@@ -106,8 +115,6 @@ tTwo = \relative c {
 }
 
 bOne = \relative c {
-	\set beamExceptions = #'()
-	\set beatStructure = #'(1 1 1 1)
 	\override Voice.Rest #'staff-position = #0
 	\autoBeamOff
 
@@ -127,8 +134,6 @@ bOne = \relative c {
 }
 
 bTwo = \relative c {
-	\set beamExceptions = #'()
-	\set beatStructure = #'(1 1 1 1)
 	\override Voice.Rest #'staff-position = #0
 	\autoBeamOff
 
@@ -136,29 +141,31 @@ bTwo = \relative c {
 	e8 e16 e16 e8 e8 a,8 a8 a4
 	r2 a4 cis4
 	e8 e16 e16 e8 e8 a,2
-	r2 r8 e'8 gis8 e8
-	a2(a8)
+
+	\once \override Voice.Rest #'staff-position = #-4 r2 \once \override Voice.Rest #'staff-position = #-4 r8 e'8 gis8 e8
+	a2~ a8
 	a,8 cis8 e8
 	fis4 dis4 b4 b4
+
 	e8 r16 e16 e4 r8 e,8 fis8 gis8
 	a2 a4 cis4
 	b2 b4 d4
 	e2 e4 e4
-	a,1
+	a,1\fermata
 
 }
 
 
 tTwoLyric = \lyricmode {
 	He -- lan går! Sjung
-	hopp fal -- le -- ral -- la -- la -- la -- lej 
+	hopp fal -- le -- ral -- la -- la -- la -- lej
 
 	He -- lan går! Sjung
-	hopp fal -- le -- ral -- la -- lej 
+	hopp fal -- le -- ral -- la -- lej
 
 	He -- lan går
 	He -- lan går
-	He -- lan, he --lan,
+	He -- lan, he -- lan,
 	går, gu -- tår!
 	He -- lan går,
 	he -- lan går, gu --
@@ -167,14 +174,14 @@ tTwoLyric = \lyricmode {
 
 bTwoLyric = \lyricmode {
 	He -- lan
-	går fal -- le -- ral -- la -- la -- la -- lej 
+	går fal -- le -- ral -- la -- la -- la -- lej
 	He -- lan
-	går fal -- le -- ral -- la -- lej 
+	går fal -- le -- ral -- la -- lej
 
-	Ja, he -- lan 
+	Ja, he -- lan
 	går! __ Ja, he -- lan,
 	he -- lan, he -- lan går, gu -- tår
-	Ja, he -- lan går, he -- lan 
+	Ja, he -- lan går, he -- lan
 	går, he -- lan går
 	He -- lan går!
 
@@ -253,4 +260,4 @@ bTwoLyric = \lyricmode {
 		}
 	}
 }  % End score
-\include "../Include/midiDaneLiksom.ly"
+\include "../Include/midiHelan.ly"
