@@ -65,7 +65,7 @@ tOne = \relative c' {
 	\autoBeamOff
 
 	\repeat volta 2 {
-		d4 d8 d8 d4 d8 d8 |
+		d4 d8 d8 d4 d8 c8 |
 		b4 b4 b4 b4 |
 		c4 c8 c8 b4 b8 b8 |
 
@@ -272,7 +272,7 @@ tTwoLyric = \lyricmode {
 
 	Se hur de silv -- ra -- de bäc -- kar -- na små
 	hop -- pa och slå, hop -- pa och slå
-	vän -- li -- ga ar -- mar kring tu -- vor och st -- nar.
+	vän -- li -- ga ar -- mar kring tu -- vor och ste -- nar.
 	Se, hur det sprit -- ter i bus -- kar och gre -- nar
 	av liv och av dans, av liv och av dans
 	i den här -- li -- ga vår -- so -- lens glans!
@@ -293,6 +293,7 @@ bTwoLyric = \lyricmode {
 \score { % centered <<
 	\header {
 		title = "Vårsång"
+		subtitle = "Glad såsom fågeln"
 		composer = "Prins Gustaf"
 		text = "Herman Sätherberg"
 	}
