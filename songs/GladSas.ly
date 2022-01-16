@@ -264,7 +264,7 @@ bTwo = \relative c' {
 
 tTwoLyric = \lyricmode {
 	Glad så -- som få -- geln i mor -- gon -- stun -- den,
-	häl -- sar jag vå -- ren i fris -- ka na -- tur'n,
+	häl -- sar jag vå -- ren i fri -- ska na -- tur'n,
 	lär -- kan mig ro -- par och tras -- ten i lun -- den,
 	är -- lan på å -- kern och or -- ren i fur'n.
 
@@ -278,7 +278,7 @@ tTwoLyric = \lyricmode {
 	i den här -- li -- ga vår -- so -- lens glans!
 	vår -- so -- lens glans,
 
-	ut - i vår -- so -- lens glans!
+	ut -- i vår -- so -- lens glans!
 }
 
 bTwoLyric = \lyricmode {
