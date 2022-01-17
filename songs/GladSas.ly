@@ -44,7 +44,7 @@ dynamics = \relative c {
 		}
 	}
 	\repeat volta 2 {
-		\bar ".|:"
+		\bar ".|:-||"
 		s2\p s2\< | s2\> s2\! | s1 | \break
 		s2\< s2\>-\markup{\italic{ten.}} | s1\p | s1 | \break
 		s1\cresc | s1 | s1 | \break
@@ -65,7 +65,7 @@ tOne = \relative c' {
 	\autoBeamOff
 
 	\repeat volta 2 {
-		d4 d8 d8 d4 d8 c8 |
+		d4-\markup{\bold{Lätt och livligt}} d8 d8 d4 d8 c8 |
 		b4 b4 b4 b4 |
 		c4 c8 c8 b4 b8 b8 |
 
