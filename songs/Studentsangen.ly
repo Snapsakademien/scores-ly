@@ -12,6 +12,7 @@
 	system-system-spacing.padding = #3
 	print-all-headers = ##t
 	print-page-number = ##f
+	systems-per-page = 5 % Den här raden används för att tvinga ihop sången på en sida.
 }
 
 #(set-global-staff-size 17)
