@@ -174,7 +174,7 @@ LyricTwo = \lyricmode {
 
 	se dem än som i min barn -- doms stun -- der,
 	föl -- ja bäc -- kens dans till klar -- nad sjö,
-	tras -- tens sån gi fu -- ru -- sko -- gens lun -- der,
+	tras -- tens sång i fu -- ru -- sko -- gens lun -- der,
 	vat -- ten -- få -- gelns lek kring fjärd och ö.
 }
 
