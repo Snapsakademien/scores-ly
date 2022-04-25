@@ -273,7 +273,6 @@ bTwoLyric = \lyricmode {
 		\context {
 			\Score
 			\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/2)
-%			beatStructure = #'(2 2 2 2)
 		}
 		\context {
 			\Lyrics
