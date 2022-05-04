@@ -22,6 +22,8 @@ global = {
 	\key g \major
 }
 
+\include "../Include/midiVolume.ly"
+
 %STUDENTSÅNGEN
 
 dynamicsT = \relative c' {
@@ -300,3 +302,5 @@ tTwoLyric = \lyricmode {
 		}
 	}
 }  % End score
+
+\include "../Include/midiStudentsangen.ly"

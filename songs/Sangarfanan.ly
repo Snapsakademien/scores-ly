@@ -21,6 +21,8 @@ global = {
 	\key d \major
 }
 
+\include "../Include/midiVolume.ly"
+
 %SÅNGARFANAN
 
 dynamics = \relative c' {
@@ -281,3 +283,5 @@ bTwoLyric = \lyricmode {
 		}
 	}
 }  % End score
+
+\include "../Include/midiSangarfanan.ly"
