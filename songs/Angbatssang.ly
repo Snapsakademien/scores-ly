@@ -361,4 +361,4 @@ LyricBtwo = \lyricmode {
 	}
 }  % End score
 
-\include "../Include/midiLangtanTillLandet.ly"
+\include "../Include/midiAngbatssang.ly"
