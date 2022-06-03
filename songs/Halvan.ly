@@ -9,9 +9,10 @@
 	line-width = 175
 	top-margin = 25
 	bottom-margin = 30
-	system-system-spacing.padding = #6
+	system-system-spacing.padding = #4
 	print-all-headers = ##t
 	print-page-number = ##f
+	page-count = #1
 %	ragged-last = ##t
 }
 
