@@ -67,6 +67,7 @@ system = \relative c' {
 
 tOne = \relative c' {
 	\override Voice.Rest #'staff-position = #0
+	\override MultiMeasureRest.staff-position = #2
 	\autoBeamOff
 	\partial 4
 	\override DynamicLineSpanner.staff-padding = #3
