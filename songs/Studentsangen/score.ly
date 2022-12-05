@@ -1,0 +1,48 @@
+\score { % centered <<
+
+	\studentsangenHeader
+
+	\new ChoirStaff <<
+		\new Staff = "tenor" <<
+			\global
+			\clef "treble_8"
+			\new Voice = "tOne" <<
+				\voiceOne
+				\tOne
+			>>
+			\new Voice <<
+				\dynamicUp
+				\voiceOne
+				\dynamicsT
+			>>
+			\new Voice = "tTwo" <<
+				\voiceTwo
+				\tTwo
+			>>
+		>>
+		\new Lyrics \with { alignAboveContext = "tenor" }  {
+			\lyricsto "tOne"
+			\tOneLyric
+		}
+		\new Lyrics  {
+			\lyricsto "tTwo"
+			\tTwoLyric
+		}
+		\new Staff = "basses" <<
+			\global
+			\clef "bass"
+			\new Voice = "bOne" <<
+				\voiceOne
+				\bOne
+			>>
+			\new Voice = "bTwo" <<
+				\voiceTwo
+				\bTwo
+			>>
+			\new Voice <<
+				\voiceTwo
+				\dynamicsB
+			>>
+		>>
+	>>
+}  % End score
