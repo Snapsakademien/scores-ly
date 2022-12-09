@@ -66,10 +66,10 @@ tOne = \relative c' {
 	d2\mp d4( c8 bes8) |
 	\time 6/4
 	c4^\<( d2) c4 d8( e8 <f>4) |
-	<g e>1\ff <f d>4( <e c>4) |
+	<g>1\ff <f>4( <e>4) |
 
-	<f d>4( <e c>4) <d bes>8( <f d>8 <e c>2)^\> <d bes>4 |
-	c1^\p bes8( a8 bes4) |
+	<f>4( <e>4) d8( <f>8 <e>2)^\> <d>4 |
+	f4^\pp( e4) d4( c4) bes8( a8) bes4 |
 	c4 c8 c8 c8([ bes8) a8( c8)] bes8( a8) bes4 |
 
 	c4~ c8 r8 a4( g4) f4( a4)
@@ -106,14 +106,14 @@ tTwo = \relative c {
 	<a>4 <g>8( <a>8) <bes>4 <bes>8 <bes>8 |
 	<bes>8( <a>8 <g>8 <bes>8) <a>8( <g>8 <a>4) |
 	\time 6/4
-	<a>4\< <g>8( <a>8) <bes>8([ <a>8) <g>8( <bes>8)] <a>8([ <g>8]) a8\ff( bes8 |
-	c4.) c8 c8([ bes8 a8 c8] bes8 a8) bes4~ |
+	<a>4\< <g>8( <a>8) <bes>8([ <a>8) <g>8( <bes>8)] <a>8([ <g>8]) a8\ff( bes8) |
+	e1 d4( c4) |
 
-	bes4 bes8[ bes8] bes8([ a8 g8 bes8] a8 f8 g4 |
-	a4) a8^\mf a8 a8([ g8) f8( a8)] g8( f8) g4 |
-	a2~( a8[ g8 f8 a8] g8 f8 g4 |
+	d4( c4) bes8( d8 c2) bes4 |
+	c1\p c2 |
+	c1 c2 |
 
-	a4~ a8) r8 a4( g4) f4( a4)
+	c4~ c8 r8 a4( g4) f4( a4)
 	\time 4/4
 	g2( f4 e4) |
 	d2. c4 |
@@ -147,14 +147,14 @@ bOne = \relative c' {
 	<f>4 <e>8( <f>8) <g>4 <g>8 <g>8 |
 	<g>8( <f>8 <e>8 <g>8) <f>8( <e>8 <f>4) |
 	\time 6/4
-	<f>4 <e>8( <f>8) <g>8([ <f>8) <e>8( <g>8)] <f>8([ <e>8] <f>4) |
-	<g>1\ff <f>4( <e>4) |
+	<f>4 <e>8( <f>8) <g>8([ <f>8) <e>8( <g>8)] <f>8([ <e>8)] a8( bes8 |
+	c4.) c8 c8([ bes8 a8 c8] bes8 a8) bes4~ |
 
-	<f>4( <e>4) <d>8( <f>8 <e>2)^\> <bes'>4 |
-	a4^\pp( g4) f4( e4) d4 c4 |
-	f4( e4 d4 e4) d4( c4) |
+	bes4 bes8[ bes8] bes8([ a8 g8 bes8] a8 f8 g4 |
+	a4) a8^\mf a8 a8([ g8) f8( a8)] g8( f8) g4 |
+	a2~( a8[ g8 f8 a8] g8 f8 g4 |
 
-	f4~ f8) r8 f4( e4) d4( e4)
+	a4~ a8) r8 f4( e4) d4( e4)
 	\time 4/4
 	d2( c2) |
 	bes1 |
@@ -191,12 +191,12 @@ bTwo = \relative c {
 	c4.) c8 c8([ bes8 a8 c8] bes8 a8) bes4~ |
 
 	bes4 bes8 bes8 bes8([ a8 g8\> bes8] a8 f8 g4) |
-	<a>4\p( g'4) f4( e4) d4 c4 |
-	f,1 f2 |
+	<a' a,>4\p( g4) f4( e4) d4 c4 |
+	f4( e4 d4 e4) d4( c4) |
 
 	\override Voice.Rest #'staff-position = #0
 
-	f4~ f8 r8 f'4( e4) d4( c4)
+	f4~ f8 r8 f4( e4) d4( c4)
 	\time 4/4
 	bes2( a2) |
 	g2. c4 |
