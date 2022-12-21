@@ -23,7 +23,7 @@ bars = \relative c' {
 dynamics = \relative c' {
 	\partial 2
 
-	s2\p^\markup{ \translate #'(-6 . 3) \bold {Moderato, ben sostenuto}} |
+	s2\p |
 	s1 | s1 | s1\> | s2\! s2\< | s2.\> s4\! |
 	s2. s4\< | s2\! s8 s8\> s4 | s2\! s2\< | s1\! | s1 | s1 |
 	s1 | s1 | s1 | s1 | s1 |
@@ -42,7 +42,7 @@ tOne = \relative c' {
 	\override Voice.Rest #'staff-position = #0
 	\partial 2
 
-	a4 a4 |
+	a4^\markup{ \translate #'(-6 . 3) \bold {Moderato, ben sostenuto}} a4 |
 	a4.( g8) f4 a4 |
 	g4.( f8) g2 |
 	a8( g8 f8 a8 g8 f8) g4 |
@@ -148,7 +148,7 @@ bOne = \relative c' {
 	<g>8( <f>8 <e>8 <g>8) <f>8( <e>8 <f>4) |
 	\time 6/4
 	<f>4 <e>8( <f>8) <g>8([ <f>8) <e>8( <g>8)] <f>8([ <e>8] <f>4) |
-	<g>1\ff <f>4( <e>4) |
+	<g>1 <f>4( <e>4) |
 
 	<f>4( <e>4) <d>8( <f>8 <e>2)^\> <bes'>4 |
 	a4^\pp( g4) f4( e4) d4 c4 |
