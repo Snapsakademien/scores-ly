@@ -5,7 +5,7 @@ tOneLyric = \lyricmode {
 	ra -- duj -- sia,
 	ra -- duj -- sia
 
-	Ja -- ko Spa  -- sa
+	Ja -- ko Spa  -- sa ro -- di -- la
 	Ja -- ko Spa  -- sa ro -- di -- la
 }
 
@@ -18,9 +18,9 @@ tTwoLyric = \lyricmode {
 	Bla -- go -- slo -- ven -- na
 	Ty  v_zje -- nach,
 	\repeat unfold 11 {\skip 1}
+	Ja, ra -- duj -- sia
 	Ja -- ko Spa -- sa ro -- di -- la
-	Ja -- ko Spa -- sa ro -- di -- la
-	je -- si dusj na -- sjich
+	je -- si dusj na - sjich
 }
 
 bOneLyric = \lyricmode {
@@ -36,18 +36,14 @@ bOneLyric = \lyricmode {
 	\override LyricText.extra-offset = #'(0 . 0)
 	\override LyricHyphen.extra-offset = #'(0 . 0)
 
-	ra -- duj -- sia
-	Ja -- ko, Ja -- ko Spa -- sa ro -- di -- la
-}
-
-bTwoTwoLyric = \lyricmode {
-%	ro -- di -- la
+	Ja -- ko Spa -- sa ro -- di -- la
+	Ja -- ko Spa -- sa ro -- di -- la
 }
 
 bTwoLyric = \lyricmode {
-	\repeat unfold 23 {\skip 1}
-	Ja -- ko Spa -- sa ro -- di -- la
+
 }
+
 altLyric = \markup {
 		\fill-line {
 			\hspace #1

@@ -69,8 +69,8 @@ tOne = \relative c' {
 	<g e>1\ff <f d>4( <e c>4) |
 
 	<f d>4( <e c>4) <d bes>8( <f d>8 <e c>2)^\> <d bes>4 |
-	c1^\p bes8( a8 bes4) |
-	c4 c8 c8 c8([ bes8) a8( c8)] bes8( a8) bes4 |
+	c1^\p bes8( a8 bes4 |
+	c4) c8 c8 c8([ bes8) a8( c8)] bes8( a8) bes4 |
 
 	c4~ c8 r8 a4( g4) f4( a4)
 	\time 4/4
@@ -116,7 +116,7 @@ tTwo = \relative c {
 	a4~ a8) r8 a4( g4) f4( a4)
 	\time 4/4
 	g2( f4 e4) |
-	d2. c4 |
+	d2.( c4) |
 	c1
 }
 
@@ -154,7 +154,7 @@ bOne = \relative c' {
 	a4^\pp( g4) f4( e4) d4 c4 |
 	f4( e4 d4 e4) d4( c4) |
 
-	f4~ f8) r8 f4( e4) d4( e4)
+	f4~ f8 r8 f4( e4) d4( e4)
 	\time 4/4
 	d2( c2) |
 	bes1 |
@@ -199,7 +199,7 @@ bTwo = \relative c {
 	f4~ f8 r8 f'4( e4) d4( c4)
 	\time 4/4
 	bes2( a2) |
-	g2. c4 |
+	g2.( c4) |
 	<f,>1_\fermata
 }
 

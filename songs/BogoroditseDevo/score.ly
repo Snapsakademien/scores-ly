@@ -46,7 +46,7 @@
 					\voiceTwo
 					\bTwo
 				>>
-				\new Voice = "bTwo" <<
+				\new Voice = "bTwoTwo" <<
 					\voiceTwo
 					\bTwoTwo
 				>>
@@ -59,6 +59,10 @@
 		\new Lyrics  {
 			\lyricsto "bTwo"
 			\bTwoLyric
+		}
+		\new Lyrics  {
+			\lyricsto "bTwoTwo"
+			\bTwoTwoLyric
 		}
 	>>
 }  % End score
