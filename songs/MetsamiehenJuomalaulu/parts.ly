@@ -97,7 +97,7 @@ systemBtwo = \relative c' {
 tOne = \relative c' {
 	\autoBeamOff
 	\partial 2
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 
 	a8^\markup {  \translate #'(-6 . 3) \bold Vivace } a8. gis16 a8 |
 
@@ -133,7 +133,7 @@ tOne = \relative c' {
 tTwo = \relative c' {
 	\autoBeamOff
 	\partial 2
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 
 	a8 a8. gis16 a8 |
 
@@ -178,12 +178,12 @@ bOne = \relative c' {
 	e4.~ e4. r4. |
 
 	r4. r4 cis8 cis8. d16 e8 |
-	d4.~ d8  \once	\override Voice.Rest #'staff-position = #0 r8 fis8 fis8. fis16 b8 |
+	d4.~ d8  \once	\override Voice.Rest.staff-position = #0 r8 fis8 fis8. fis16 b8 |
 	ais2. fis4. |
 	fis8. fis16 b8 a8. a16 a8 gis8. gis16 d8 |
 
 	cis4.~ cis4 r8 r4. |
-	r4. r4 s8 \once	\override Voice.Rest #'staff-position = #0 r4. |
+	r4. r4 s8 \once	\override Voice.Rest.staff-position = #0 r4. |
 	r4. r4 a'8 a8. a16 a8 |
 	a4.~ a4 a8 a8. a16 a8 |
 
@@ -198,7 +198,7 @@ bOne = \relative c' {
 	cis2.) b4 bes8 |
 
 	a2. g4. |
-	fis4.~ fis8  \once	\override Voice.Rest #'staff-position = #0 r8
+	fis4.~ fis8  \once	\override Voice.Rest.staff-position = #0 r8
 }
 
 bTwo = \relative c' {
@@ -214,12 +214,12 @@ bTwo = \relative c' {
 	cis4.~ cis4 e8 g8. e16 cis8 |
 
 	a4.~ a4 a8 a8. a16 a8 |
-	b4.~ b8  \once	\override Voice.Rest #'staff-position = #0 r8 b8 b8. b16 b8 |
+	b4.~ b8  \once	\override Voice.Rest.staff-position = #0 r8 b8 b8. b16 b8 |
 	fis2. ais4. |
 	b8. cis16 d8 e8. e16 e8 e8. e16 e8 |
 
 	a,4.~ a4 cis16[ d16] e8. fis16 gis8 |
-	a4.~ a4 \once	\override Voice.Rest #'staff-position = #0 r8 s4. |
+	a4.~ a4 \once	\override Voice.Rest.staff-position = #0 r8 s4. |
 	r4 a,8 a'4 r8 r4. |
 	r4 a,8 a'4 r8 r4. |
 
@@ -234,5 +234,5 @@ bTwo = \relative c' {
 	fis2. g4 g8 |
 
 	a2. a,4. |
-	<d d,>4.~ <d d,>8\fermata  \once	\override Voice.Rest #'staff-position = #0 r8
+	<d d,>4.~ <d d,>8\fermata  \once	\override Voice.Rest.staff-position = #0 r8
 }

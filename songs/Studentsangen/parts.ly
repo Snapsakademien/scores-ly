@@ -76,7 +76,7 @@ tOne = \relative c' {
 
 tTwo = \relative c' {
 	\autoBeamOff
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\override DynamicLineSpanner.staff-padding = #3
 
 	g4 g8. g16 g4 g4 |
@@ -153,7 +153,7 @@ bOne = \relative c {
 
 bTwo = \relative c {
 	\autoBeamOff
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\override DynamicLineSpanner.staff-padding = #3
 
 	g4 g8. g16 g4 g4 |

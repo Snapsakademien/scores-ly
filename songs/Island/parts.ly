@@ -52,7 +52,7 @@ systemBone = \relative c' {
 
 tOne = \relative c {
 	\autoBeamOff
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 
 	s4^\markup {  \translate #'(-6 . 3) \bold Maestoso } s2. |
 	e4 a8. c16 d4 c4 |
@@ -78,7 +78,7 @@ tOne = \relative c {
 
 tTwo = \relative c {
 	\autoBeamOff
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 
 	s1 |
 	e4 e8. a16 b4 a4 |
@@ -129,7 +129,7 @@ bOne = \relative c {
 
 bTwo = \relative c {
 	\autoBeamOff
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 
 	a4 c8. e16 f4 e4 |
 	e4 c8. a16 gis4 a4 |

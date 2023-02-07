@@ -13,8 +13,8 @@ system = \relative c' {
 }
 
 tOne = \relative c {
-	\override Voice.Rest #'staff-position = #0
-	\override Voice.MultiMeasureRest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
+	\override Voice.MultiMeasureRest.staff-position = #0
 
 	fis4. fis8 d4 b4 |
 	b'4. b8 ais4 fis4 |
@@ -43,8 +43,8 @@ tOne = \relative c {
 }
 
 tTwo = \relative c {
-	\override Voice.Rest #'staff-position = #0
-	\override Voice.MultiMeasureRest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
+	\override Voice.MultiMeasureRest.staff-position = #0
 	\set beamExceptions = #'()
 	\set beatStructure = #'(1 1 1 1)
 
@@ -75,8 +75,8 @@ tTwo = \relative c {
 }
 
 bOne = \relative c {
-	\override Voice.Rest #'staff-position = #0
-	\override Voice.MultiMeasureRest #'staff-position = #4
+	\override Voice.Rest.staff-position = #0
+	\override Voice.MultiMeasureRest.staff-position = #4
 
 	fis4. fis8 d4 b4 |
 	b'4. b8 ais4 fis4 |
@@ -105,7 +105,7 @@ bOne = \relative c {
 }
 
 bTwo = \relative c {
-	\override Voice.MultiMeasureRest #'staff-position = #-8
+	\override Voice.MultiMeasureRest.staff-position = #-8
 
 	fis4. fis8 d4 b4 |
 	b'4. b8 ais4 fis4 |

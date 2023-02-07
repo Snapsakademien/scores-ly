@@ -93,12 +93,12 @@ tTwo = \relative c {
 	a4.. a16 a4 b8.( cis16) |
 	d2 a4 a8. a16 |
 	a4. a8 g4 g4 |
-	a2 \once 	\override Voice.Rest #'staff-position = #0 r4 a8. a16 |
+	a2 \once 	\override Voice.Rest.staff-position = #0 r4 a8. a16 |
 
 	a4. a8 cis4 d4 |
 	e2 cis4 a8. a16 |
 	fis'4. d8 b4 ais4 |
-	b2 \once 	\override Voice.Rest #'staff-position = #0 r4 d8. cis16 |
+	b2 \once 	\override Voice.Rest.staff-position = #0 r4 d8. cis16 |
 
 	b4 gis4 a4 b4 |
 	cis2 dis2 |
@@ -111,7 +111,7 @@ tTwo = \relative c {
 		a2_> a2_>
 		r4 a8. a16 a8 r8 a8 r8 |
 		a2 a2 |
-		a2 \once 	\override Voice.Rest #'staff-position = #0 r4 d8. cis16 |
+		a2 \once 	\override Voice.Rest.staff-position = #0 r4 d8. cis16 |
 
 		b4. b8 b4 b4 |
 		b4.( dis8) e2 |
@@ -128,7 +128,7 @@ tTwo = \relative c {
 		{
 			a2 r4 a8.\p a16
 		}{
-			a2 \once \override Voice.Rest #'staff-position = #0 r4
+			a2 \once \override Voice.Rest.staff-position = #0 r4
 		}
 	}
 }
@@ -136,7 +136,7 @@ tTwo = \relative c {
 bOne = \relative c {
 	\set beamExceptions = #'()
 	\set beatStructure = #'(1 1 1 1)
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 4
 
 	d8. fis16|
@@ -186,7 +186,7 @@ bOne = \relative c {
 bTwo = \relative c {
 	\set beamExceptions = #'()
 	\set beatStructure = #'(1 1 1 1)
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 4
 
 	d8. fis16|
@@ -198,9 +198,9 @@ bTwo = \relative c {
 	g4. fis8 e4 d4 |
 	a2 a'4 a,8. a16 |
 	fis'4. d8 b4 fis4 |
-	b2 r4 \once \override Voice.Rest #'staff-position = #-3 r4 |
+	b2 r4 \once \override Voice.Rest.staff-position = #-3 r4 |
 
-	\once	\override Voice.Rest #'staff-position = #-3 r4 e8. e16 e4 e4 |
+	\once	\override Voice.Rest.staff-position = #-3 r4 e8. e16 e4 e4 |
 	a4 a4 fis4 fis4 |
 	e4.. e16 e8. e16 e8. e16 |
 	a,2 r2 |

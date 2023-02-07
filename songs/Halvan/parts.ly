@@ -41,7 +41,7 @@ system = \relative c' {
 }
 
 tOne = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\override MultiMeasureRest.staff-position = #2
 	\autoBeamOff
 	\partial 4
@@ -175,11 +175,11 @@ bTwo = \relative c {
 
 		aes2. aes4 |
 		bes4 g2 es4 |
-		f8 \once \override Voice.Rest #'staff-position = #0 r8 g8 \once \override Voice.Rest #'staff-position = #0 r8 aes4 \once \override Voice.Rest #'staff-position = #0 r8. bes16 |
+		f8 \once \override Voice.Rest.staff-position = #0 r8 g8 \once \override Voice.Rest.staff-position = #0 r8 aes4 \once \override Voice.Rest.staff-position = #0 r8. bes16 |
 	}
 	\alternative {
 		{ bes2. es4 \bar ":|."}
-		{ bes2. \once \override Voice.Rest #'staff-position = #0 r4 }
+		{ bes2. \once \override Voice.Rest.staff-position = #0 r4 }
 	}
 
 	\bar ".|:"
@@ -193,7 +193,7 @@ bTwo = \relative c {
 		aes4. aes,8 des4 es8 fes8 |
 	}
 	\alternative {
-		{ es4. es8 es,4 es4 | aes2 \once \override Voice.Rest #'staff-position = #0 r2 \bar ":|." }
+		{ es4. es8 es,4 es4 | aes2 \once \override Voice.Rest.staff-position = #0 r2 \bar ":|." }
 		{ es'4. es8 es,4\fermata es4 | aes2. \bar "|."}
 	}
 }

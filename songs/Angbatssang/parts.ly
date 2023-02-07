@@ -24,7 +24,7 @@ system = \relative c' {
 }
 
 tOne = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\autoBeamOff
 
 	r2^\markup{ \translate #'(-6 . 3) {\bold {Allegro moderato}}} \tuplet 3/2 {r8 bes8 bes8} \tuplet 3/2 {c8 bes8 a8} |
@@ -72,7 +72,7 @@ tOne = \relative c' {
 }
 
 tTwo = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\override TupletBracket.bracket-visibility = ##f
 	\omit TupletNumber
 	\autoBeamOff
@@ -122,7 +122,7 @@ tTwo = \relative c' {
 }
 
 bOne = \relative c {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\override TupletBracket.bracket-visibility = ##f
 	\omit TupletNumber
 	\autoBeamOff
@@ -174,7 +174,7 @@ bOne = \relative c {
 bTwo = \relative c {
 	\autoBeamOff
 
-	s2 \tuplet 3/2 {\once \override Voice.Rest #'staff-position = #0 r8 es8 es8} \tuplet 3/2 {es8 es8 es8} |
+	s2 \tuplet 3/2 {\once \override Voice.Rest.staff-position = #0 r8 es8 es8} \tuplet 3/2 {es8 es8 es8} |
 	es4 es8. es16 \tuplet 3/2 {f8 f8 f8} \tuplet 3/2 {f8 f8 f8} |
 	f4 d8. d16 es4 s4 |
 	c4. c8 c4 c8. c16 |
@@ -227,7 +227,7 @@ systemEnd = \relative c' {
 
 
 tOneEnd = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\autoBeamOff
 	\partial 2.
 
@@ -241,7 +241,7 @@ tOneEnd = \relative c' {
 }
 
 tTwoEnd = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\override TupletBracket.bracket-visibility = ##f
 	\omit TupletNumber
 	\partial 2.
@@ -257,7 +257,7 @@ tTwoEnd = \relative c' {
 }
 
 bOneEnd = \relative c {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\override TupletBracket.bracket-visibility = ##f
 	\omit TupletNumber
 	\partial 2.

@@ -49,7 +49,7 @@ dynamics = \relative c' {
 }
 
 tOne = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 
 	bes2.^\markup{ \translate #'(-6 . 3) \bold { Tempo moderato} } g4 |
 	f4 es4 g4 bes4 |
@@ -87,9 +87,9 @@ tOne = \relative c' {
 	c2) c4 r4 |
 
 	c2. d4 |
-	d2~ d4 \once \override Voice.Rest #'staff-position = #5 r4 |
+	d2~ d4 \once \override Voice.Rest.staff-position = #5 r4 |
 	es2. f4 |
-	f2~ f4 \once \override Voice.Rest #'staff-position = #5 r4 |
+	f2~ f4 \once \override Voice.Rest.staff-position = #5 r4 |
 
 	g2. g4 |
 	g2 fis2 g1~ |
@@ -137,7 +137,7 @@ tOne = \relative c' {
 }
 
 tTwo = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 
 	bes2. g4 |
 	f4 es4 g4 bes4 |
@@ -225,7 +225,7 @@ tTwo = \relative c' {
 }
 
 bOne = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 
 	bes2. g4 |
 	f4 es4 g4 bes4 |
@@ -313,7 +313,7 @@ bOne = \relative c' {
 }
 
 bTwo = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\arpeggioBracket
 
 	bes2. g4 |

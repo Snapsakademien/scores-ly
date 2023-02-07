@@ -48,7 +48,7 @@ bTwoDynamics = \relative c {
 }
 
 tOne = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\autoBeamOff
 
 	cis4 e4 a,4. cis8
@@ -69,7 +69,7 @@ tOne = \relative c' {
 }
 
 tTwo = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\autoBeamOff
 
 	a4 cis4 a4. a8
@@ -91,7 +91,7 @@ tTwo = \relative c' {
 }
 
 bOne = \relative c {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\autoBeamOff
 
 	r2 cis4 e4
@@ -110,7 +110,7 @@ bOne = \relative c {
 }
 
 bTwo = \relative c {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\autoBeamOff
 
 	r2 a4 cis4
@@ -118,7 +118,7 @@ bTwo = \relative c {
 	r2 a4 cis4
 	e8 e16 e16 e8 e8 a,2
 
-	\once \override Voice.Rest #'staff-position = #-4 r2 \once \override Voice.Rest #'staff-position = #-4 r8 e'8 gis8 e8
+	\once \override Voice.Rest.staff-position = #-4 r2 \once \override Voice.Rest.staff-position = #-4 r8 e'8 gis8 e8
 	a2~ a8
 	a,8 cis8 e8
 	fis4 dis4 b4 b4

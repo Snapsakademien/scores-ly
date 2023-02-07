@@ -21,7 +21,7 @@ system = \relative c' {
 }
 
 tOne = \relative c {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 4
 
 	fis4^\markup { \translate #'(-6 . 3) \bold Andante }
@@ -38,7 +38,7 @@ tOne = \relative c {
 }
 
 tTwo = \relative c {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 4
 
 	fis4
@@ -55,7 +55,7 @@ tTwo = \relative c {
 }
 
 bOne = \relative c {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 4
 
 	fis4
@@ -72,7 +72,7 @@ bOne = \relative c {
 }
 
 bTwo = \relative c {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 4
 	\set beamExceptions = #'()
 	\set beatStructure = #'(1 1 1 1)

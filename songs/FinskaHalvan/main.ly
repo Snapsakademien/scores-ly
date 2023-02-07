@@ -1,5 +1,5 @@
 % LilyBin
-\version "2.22.2"
+\version "2.24.0"
 
 \include "../../Include/midiVolume.ly"
 \include "../../Include/copyright.ly"

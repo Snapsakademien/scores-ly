@@ -27,33 +27,33 @@ tOne = \relative c' {
 	d'4. d8 es4. c8 |
 	bes8[ d8] f,4 r8 \once \override DynamicText.X-offset = #-4 f'8^\mf d8 bes8 |
 	f2. a4 |
-	bes4 \once \override Voice.Rest #'staff-position = #0 r4 \once \override Voice.Rest #'staff-position = #0 r4 f4 |
+	bes4 \once \override Voice.Rest.staff-position = #0 r4 \once \override Voice.Rest.staff-position = #0 r4 f4 |
 
 	d'4. d8 es4. es8 |
-	d4 c4 \once \override Voice.Rest #'staff-position = #0 r4 c4 |
+	d4 c4 \once \override Voice.Rest.staff-position = #0 r4 c4 |
 	c4. c8 e4. e8 |
-	f2 \once \override Voice.Rest #'staff-position = #0 r4 f,4 |
+	f2 \once \override Voice.Rest.staff-position = #0 r4 f,4 |
 
 	c'4-. es4-. d4-. f4-. |
-	f8[ d8] bes4 \once \override Voice.Rest #'staff-position = #0 r4 d4 |
+	f8[ d8] bes4 \once \override Voice.Rest.staff-position = #0 r4 d4 |
 	es4 d4 c4 g'4 |
 	f2 r4 f,4^\f |
 
 	bes2~ bes8. d,16 es8. f16 |
 	g4 es4 r4 g4 |
 	es'2~ es8. d16 c8 bes8 |
-	a4 f4 \once \override Voice.Rest #'staff-position = #0 r4 f'4 |
+	a4 f4 \once \override Voice.Rest.staff-position = #0 r4 f'4 |
 
 	f2 d4. es8 |
 	f4 g4 f4. es8 |
 	d4. es8 d4 c4 |
-	bes2 \once \override Voice.Rest #'staff-position = #0 r4 f'4 |
+	bes2 \once \override Voice.Rest.staff-position = #0 r4 f'4 |
 
 	f2 d4. es8 |
 	f4 g4 f4. es8 |
 	d4. es8 d4 c4 |
 	\set Timing.measureLength = #(ly:make-moment 3/4)
-	bes2 \once \override Voice.Rest #'staff-position = #0 r4 |
+	bes2 \once \override Voice.Rest.staff-position = #0 r4 |
 }
 
 tTwo = \relative c' {
@@ -65,37 +65,37 @@ tTwo = \relative c' {
 	f4. bes8 a4. a8 |
 	f4 d4 r2 |
 	r8 d'8\mf c8 bes8 a8[ g8] f8[ es8] |
-	d4 \once \override Voice.Rest #'staff-position = #0 r4 \once \override Voice.Rest #'staff-position = #0 r4 f4 |
+	d4 \once \override Voice.Rest.staff-position = #0 r4 \once \override Voice.Rest.staff-position = #0 r4 f4 |
 
 	f4. bes8 bes4. bes8 |
-	bes4 bes4 \once \override Voice.Rest #'staff-position = #0 r4 bes4 |
+	bes4 bes4 \once \override Voice.Rest.staff-position = #0 r4 bes4 |
 	a4. a8 bes4. bes8 |
-	a2 \once \override Voice.Rest #'staff-position = #0 r4 f4 |
+	a2 \once \override Voice.Rest.staff-position = #0 r4 f4 |
 
 	a4 c4 bes4 a4 |
-	bes8[ d8] bes4 \once \override Voice.Rest #'staff-position = #0 r4 bes4 |
+	bes8[ d8] bes4 \once \override Voice.Rest.staff-position = #0 r4 bes4 |
 	a4 bes4 g4 bes4 |
 	a2 r2 |
 
 	r4 r8 bes8\f bes8. bes16 bes8. bes16 |
 	bes4 g4 r2 |
 	r2 r4. e'8 |
-	f4 f,4 \once \override Voice.Rest #'staff-position = #0 r4 d'4 |
+	f4 f,4 \once \override Voice.Rest.staff-position = #0 r4 d'4 |
 
 	d2 bes4. c8 |
 	d4 es4 d4. c8 |
 	bes4. c8 bes4 a4 |
-	bes2 \once \override Voice.Rest #'staff-position = #0 r4 d4 |
+	bes2 \once \override Voice.Rest.staff-position = #0 r4 d4 |
 
 	d2 bes4. c8 |
 	d4 es4 d4. c8 |
 	bes4. c8 bes4 a4 |
 	\set Timing.measureLength = #(ly:make-moment 3/4)
-	bes2 \once \override Voice.Rest #'staff-position = #0 r4 |
+	bes2 \once \override Voice.Rest.staff-position = #0 r4 |
 }
 
 bOne = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 4
 	\autoBeamOff
 
@@ -134,7 +134,7 @@ bOne = \relative c' {
 
 bTwo = \relative c' {
 	\autoBeamOff
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 4
 
 	f,4 |

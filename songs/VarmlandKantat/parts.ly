@@ -5,7 +5,7 @@ global = {
 
 system = \relative c' {
 	\autoBeamOff
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 4
 
 	s4\f
@@ -28,7 +28,7 @@ system = \relative c' {
 
 tOne = \relative c' {
 	\autoBeamOff
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 4
 
 	a4 |
@@ -70,7 +70,7 @@ tOne = \relative c' {
 
 tTwo = \relative c' {
 	\autoBeamOff
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 4
 
 	a4 |
@@ -112,7 +112,7 @@ tTwo = \relative c' {
 
 bOne = \relative c' {
 	\autoBeamOff
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 4
 
 	a4 |
@@ -154,7 +154,7 @@ bOne = \relative c' {
 
 bTwo = \relative c' {
 	\autoBeamOff
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 4
 
 	a4 |

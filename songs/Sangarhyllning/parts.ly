@@ -5,7 +5,7 @@ global = {
 system = \relative c' {
 	\autoBeamOff
 	\partial  4
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\override DynamicLineSpanner.staff-padding = #3
 
 	s4\f \bar ".|:"
@@ -27,7 +27,7 @@ system = \relative c' {
 tOne = \relative c' {
 	\autoBeamOff
 	\partial  4
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\override DynamicLineSpanner.staff-padding = #3
 
 	e,4 \bar ".|:"
@@ -49,7 +49,7 @@ tOne = \relative c' {
 tTwo = \relative c' {
 	\autoBeamOff
 	\partial  4
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\override DynamicLineSpanner.staff-padding = #3
 
 	e,4 \bar ".|:"
@@ -71,7 +71,7 @@ tTwo = \relative c' {
 bOne = \relative c {
 	\autoBeamOff
 	\partial  4
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\override DynamicLineSpanner.staff-padding = #3
 
 	e4 \bar ".|:"
@@ -93,7 +93,7 @@ bOne = \relative c {
 bTwo = \relative c {
 	\autoBeamOff
 	\partial  4
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\override DynamicLineSpanner.staff-padding = #3
 
 	e4 \bar ".|:"

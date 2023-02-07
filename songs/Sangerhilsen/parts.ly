@@ -13,7 +13,7 @@ system = \relative c' {
 }
 
 tOne = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\autoBeamOff
 
 	a4.-> a8 a4 \tuplet 3/2 {a,8[( cis8 e8)]} |
@@ -38,7 +38,7 @@ tOne = \relative c' {
 }
 
 tTwo = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\autoBeamOff
 
 	a4. a8 a4 \tuplet 3/2 {a,8[( cis8 e8)]} |
@@ -63,7 +63,7 @@ tTwo = \relative c' {
 }
 
 bOne = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\autoBeamOff
 
 	a4. a8 a4 \tuplet 3/2 {a,8[( cis8 e8)]} |
@@ -88,7 +88,7 @@ bOne = \relative c' {
 }
 
 bTwo = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\autoBeamOff
 
 	a4.-> a8 a4 \tuplet 3/2 {a,8[( cis8 e8)]} |

@@ -22,12 +22,12 @@ tOne = \relative c' {
 	c4. c8  c4  c4 |
 	f2 es2 |
 	des2. des4 |
-	c2 \once \override Voice.Rest #'staff-position = #0 r4 c4 |
+	c2 \once \override Voice.Rest.staff-position = #0 r4 c4 |
 
 	c4. c8  c4  c4 |
 	f2 es2 |
 	des2. des4 |
-	c2 \once \override Voice.Rest #'staff-position = #0 r4 c4 |
+	c2 \once \override Voice.Rest.staff-position = #0 r4 c4 |
 
 	e4 f4 des4 c4 |
 	bes4.( des8) c4 c4 |
@@ -48,12 +48,12 @@ tTwo = \relative c' {
 	c4. bes8  aes4  aes4 |
 	des2 c2 |
 	c4( bes8[ a8] bes4) bes4 |
-	g2 \once \override Voice.Rest #'staff-position = #0 r4 c4 |
+	g2 \once \override Voice.Rest.staff-position = #0 r4 c4 |
 
 	c4. bes8  aes4  aes4 |
 	des2 c2 |
 	c4( bes8[ a8] bes4) bes4 |
-	g2 \once \override Voice.Rest #'staff-position = #0 r4 c4 |
+	g2 \once \override Voice.Rest.staff-position = #0 r4 c4 |
 
 	c4 c4 bes4 aes4 |
 	aes4( g4) aes4 c4 |
@@ -69,7 +69,7 @@ tTwo = \relative c' {
 }
 
 bOne = \relative c {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\autoBeamOff
 	\partial 4
 
@@ -100,7 +100,7 @@ bOne = \relative c {
 bTwo = \relative c {
 	\autoBeamOff
 	\partial 4
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 
 	c'4 |
 	aes4. g8 f4 es4 |

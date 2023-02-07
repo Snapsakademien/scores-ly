@@ -39,7 +39,7 @@ dynamics = \relative c' {
 }
 
 tOne = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 2
 
 	a4^\markup{ \translate #'(-6 . 3) \bold {Moderato, ben sostenuto}} a4 |
@@ -80,7 +80,7 @@ tOne = \relative c' {
 }
 
 tTwo = \relative c {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 2
 
 	f4 f4 |
@@ -121,7 +121,7 @@ tTwo = \relative c {
 }
 
 bOne = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 2
 
 	c4 c4 |
@@ -194,7 +194,7 @@ bTwo = \relative c {
 	<a>4\p( g'4) f4( e4) d4 c4 |
 	f,1 f2 |
 
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 
 	f4~ f8 r8 f'4( e4) d4( c4)
 	\time 4/4

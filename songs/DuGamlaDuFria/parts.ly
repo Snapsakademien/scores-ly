@@ -16,7 +16,7 @@ system = \relative c' {
 }
 
 tOne = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\autoBeamOff
 	\partial 8
 
@@ -36,7 +36,7 @@ tOne = \relative c' {
 }
 
 tTwo = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 8
 	\autoBeamOff
 
@@ -57,7 +57,7 @@ tTwo = \relative c' {
 }
 
 bOne = \relative c' {
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 8
 	\autoBeamOff
 
@@ -79,7 +79,7 @@ bOne = \relative c' {
 
 bTwo = \relative c {
 	\autoBeamOff
-	\override Voice.Rest #'staff-position = #0
+	\override Voice.Rest.staff-position = #0
 	\partial 8
 
 	d8 |
