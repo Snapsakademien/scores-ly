@@ -38,7 +38,7 @@ jobs:
             mkdir "${directory_name}"
             /home/runner/bin/lilypond -dbackend=svg -o "$directory_name" "$file"
           fi
-        ; done
+        done
 
     - name: Save artifacts
       uses: actions/upload-artifact@v2
