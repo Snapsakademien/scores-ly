@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Download shell script
-      run: wget https://lilypond.org/downloads/binaries/linux-64/lilypond-2.24.1-1.linux-64.sh
+      run: wget https://lilypond.org/downloads/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh
 
     - name: Make shell script executable
       run: chmod +x lilypond-2.18.2-1.linux-64.sh
