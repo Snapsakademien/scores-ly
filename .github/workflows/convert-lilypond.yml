@@ -18,8 +18,9 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y wget
-        wget -Olilypond.deb https://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-${LILYPOND_VERSION}-1.linux-64.deb
-        sudo dpkg -i lilypond.deb
+        wget -Olilypond.deb https://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-${LILYPOND_VERSION}-1.linux-64.sh
+        chmod +x lilypond-2.18.2-1.linux-64.sh
+        ./lilypond-2.18.2-1.linux-64.sh
 
     - name: Create files
       run: |
