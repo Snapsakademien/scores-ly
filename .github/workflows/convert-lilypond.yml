@@ -23,6 +23,10 @@ jobs:
     - name: Call shell script
       run: ./lilypond-2.18.2-1.linux-64.sh
 
+    steps:
+      - name: Set PATH environment variable
+        run: echo "::set-env name=PATH::$(pwd)/lilypond-2.18.2-1.linux-64/usr/bin:$PATH"
+
     - name: Run lilypond command
       run: lilypond -dbackend=svg varRedo.ly
 
