@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Download shell script
-      run: wget https://lilypond.org/downloads/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh
+      run: wget https://lilypond.org/downloads/binaries/linux-64/lilypond-2.24.1-1.linux-64.sh
 
     - name: Make shell script executable
       run: chmod +x lilypond-2.18.2-1.linux-64.sh
@@ -26,14 +26,19 @@ jobs:
     - name: Test version
       run: /home/runner/bin/lilypond --version
 
+    - name: Create folder for converted songs
+      run: mkdir converted_songs
+
     - name: Create files
       run: |
-        /home/runner/bin/lilypond  -dbackend=svg songs/varRedo.ly
-
-    - name: Create svgs folder
-      run: |
-        mkdir converted_songs
-        mv varRedo.midi varRedo-1.midi varRedo-2.midi varRedo-3.midi varRedo-4.midi varRedo.svg converted_songs/
+        for file in songs/*; do
+          if [ -f "$file" ]; then
+            base_filename=`basename "${file%.*}"`
+            directory_name="converted_songs/${base_filename}"
+            mkdir "${directory_name}"
+            /home/runner/bin/lilypond -dbackend=svg -o "$directory_name" "$file"
+          fi
+        ; done
 
     - name: Save artifacts
       uses: actions/upload-artifact@v2
