@@ -13,6 +13,6 @@ jobs:
 
     - name: Create files
       run: |
-        echo "file1 content" > svgs/file1.txt
-        echo "file2 content" > svgs/file2.txt
-        echo "file3 content" > svgs/file3.txt
+        echo "file1 content" > file1.txt
+        echo "file2 content" > file2.txt
+        echo "file3 content" > file3.txt
