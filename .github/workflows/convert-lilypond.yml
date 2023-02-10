@@ -14,17 +14,17 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Download lilypond
-      run: wget https://lilypond.org/downloads/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh
+    - name: Download shell script
+      run: curl -O $PWD/lilypond.sh https://lilypond.org/downloads/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh
 
-    - name: Make lilypond executable
-      run: chmod +x lilypond-2.18.2-1.linux-64.sh
+    - name: Make shell script executable
+      run: chmod +x $PWD/lilypond.sh
 
-    - name: Install lilypond
-      run: ./lilypond-2.18.2-1.linux-64.sh --batch
+    - name: Call shell script
+      run: $PWD/lilypond.sh
 
-    - name: Add lilypond to PATH
-      run: echo 'export PATH="$PATH:/usr/local/bin"' >> $GITHUB_ENV
+    - name: Run lilypond command
+      run: lilypond -dbackend=svg varRedo.ly
 
     - name: Verify installation
       run: |
