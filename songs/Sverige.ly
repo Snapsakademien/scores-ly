@@ -16,10 +16,13 @@
 
 #(set-global-staff-size 17)
 
+
 global = {
 	\time 4/4
 	\key bes \major
 }
+
+\include "../Include/midiVolume.ly"
 
 %SVERIGE
 
@@ -334,3 +337,5 @@ bTwoLyric = \lyricmode {
 		}
 	}
 }  % End score
+
+\include "../Include/midiVarRedo.ly"
