@@ -16,3 +16,8 @@ jobs:
         echo "file1 content" > file1.txt
         echo "file2 content" > file2.txt
         echo "file3 content" > file3.txt
+
+    - name: Create svgs folder
+      run: |
+        mkdir svgs
+        mv file1.txt file2.txt file3.txt svgs/
