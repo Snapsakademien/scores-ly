@@ -29,6 +29,8 @@ jobs:
     - name: Set environment variables
       run: echo 'export PATH=$PATH:/usr/local/lilypond-2.18.2-1/bin' >> $GITHUB_ENV
 
+    - name: Reset bash
+      run: source ~/.bashrc
 
     - name: Run lilypond command
       run: lilypond -dbackend=svg varRedo.ly
