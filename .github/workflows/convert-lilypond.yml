@@ -26,13 +26,9 @@ jobs:
     - name: Test version
       run: /home/runner/bin/lilypond --version
 
-    - name: Run lilypond command
-      run: lilypond -dbackend=svg varRedo.ly
-
-
     - name: Create files
       run: |
-        lilypond -dbackend=svg songs/varRedo.ly
+        /home/runner/bin/lilypond  -dbackend=svg songs/varRedo.ly
 
     - name: Create svgs folder
       run: |
