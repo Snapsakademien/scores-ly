@@ -25,6 +25,8 @@ jobs:
 
     - name: Set build image
       run: echo 'export PATH=$PATH:/usr/local/lilypond-2.18.2-1/bin' >> ~/.bashrc
+
+    - name: ALLAN
       run: echo 'export PATH=$PATH:/usr/local/bin' >> ~/.bashrc
 
     - name: Run lilypond command
