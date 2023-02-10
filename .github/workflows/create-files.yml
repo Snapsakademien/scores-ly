@@ -21,3 +21,9 @@ jobs:
       run: |
         mkdir svgs
         mv file1.txt file2.txt file3.txt svgs/
+
+    - name: Save artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: svgs
+        path: svgs
