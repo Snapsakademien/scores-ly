@@ -14,13 +14,22 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Install dependencies
+    - name: Download LilyPond
       run: |
-        sudo apt-get update
-        sudo apt-get install -y wget
-        wget -Olilypond.deb https://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-${LILYPOND_VERSION}-1.linux-64.sh
+        curl -LJO https://lilypond.org/downloads/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh
+
+    - name: Make LilyPond executable
+      run: |
         chmod +x lilypond-2.18.2-1.linux-64.sh
+
+    - name: Install LilyPond
+      run: |
         ./lilypond-2.18.2-1.linux-64.sh
+
+    - name: Add LilyPond to PATH
+      run: |
+        export PATH=$PATH:/usr/local/bin/
+
 
     - name: Create files
       run: |
