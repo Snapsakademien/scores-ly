@@ -1,0 +1,1 @@
+export PATH=$(pwd)/lilypond-2.18.2-1.linux-64/usr/bin:$PATH
