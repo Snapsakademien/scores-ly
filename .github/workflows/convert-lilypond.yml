@@ -3,6 +3,9 @@ name: Convert lilypond files
 on:
   push:
 
+env:
+  LILYPOND_VERSION: 2.18.2
+
 jobs:
   create-files:
     runs-on: ubuntu-latest
@@ -10,6 +13,14 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+
+    steps:
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y wget
+        wget -Olilypond.deb https://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-${LILYPOND_VERSION}-1.linux-64.deb
+        sudo dpkg -i lilypond.deb
 
     - name: Create files
       run: |
