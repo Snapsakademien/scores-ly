@@ -30,6 +30,10 @@ jobs:
       run: |
         export PATH=$PATH:/usr/local/bin/
 
+    - name: Verify installation
+      run: |
+        lilypond --version
+
 
     - name: Create files
       run: |
