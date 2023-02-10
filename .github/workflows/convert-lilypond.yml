@@ -1,0 +1,27 @@
+name: Convert lilypond files
+
+on:
+  push:
+
+jobs:
+  create-files:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Create files
+      run: |
+        lilypond -dbackend=svg songs/varRedo.ly
+
+    - name: Create svgs folder
+      run: |
+        mkdir converted_songs
+        mv varRedo.midi varRedo-1.midi varRedo-2.midi varRedo-3.midi varRedo-4.midi varRedo.svg converted_songs/
+
+    - name: Save artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: converted_songs
+        path: converted_songs
