@@ -459,5 +459,3 @@ tTwoLyricTwo = \lyricmode {
 			\override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #1.5
 		}
 }  % End score
-
-\include "../Include/midiLeende.ly"
