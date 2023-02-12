@@ -29,16 +29,19 @@ jobs:
     - name: Create folder for converted songs
       run: mkdir converted_songs
 
-    - name: Create files
+    # - name: Create files
+    #   run: |
+    #     for file in songs/*; do
+    #       if [ -f "$file" ]; then
+    #         base_filename=`basename "${file%.*}"`
+    #         directory_name="converted_songs/${base_filename}"
+    #         mkdir "${directory_name}"
+    #         /home/runner/bin/lilypond -dbackend=svg -o "$directory_name" "$file"
+    #       fi
+    #     done
+    - name: Lilipond sverige
       run: |
-        for file in songs/*; do
-          if [ -f "$file" ]; then
-            base_filename=`basename "${file%.*}"`
-            directory_name="converted_songs/${base_filename}"
-            mkdir "${directory_name}"
-            /home/runner/bin/lilypond -dbackend=svg -o "$directory_name" "$file"
-          fi
-        done
+        /home/runner/bin/lilypond -dbackend=svg songs/Sverige.ly
 
     - name: Save artifacts
       uses: actions/upload-artifact@v2
