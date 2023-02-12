@@ -41,7 +41,7 @@ jobs:
     #     done
     - name: Lilipond sverige
       run: |
-        /home/runner/bin/lilypond -dbackend=svg songs/Sverige.ly
+        /home/runner/bin/lilypond -dbackend=svg songs/ArJagFodd.ly
 
     - name: Save artifacts
       uses: actions/upload-artifact@v2
