@@ -23,6 +23,9 @@ jobs:
     - name: Call shell script
       run: ./lilypond-2.18.2-1.linux-64.sh
 
+    - name: Where am I
+      run: ls
+
     - name: Create files
       run: |
         ./convertsongs.sh
