@@ -1,0 +1,37 @@
+name: Convert lilypond files
+
+on:
+  push:
+
+env:
+  LILYPOND_VERSION: 2.18.2
+
+jobs:
+  create-files:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Download shell script
+      run: wget https://lilypond.org/downloads/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh
+
+    - name: Make shell script executable
+      run: chmod +x lilypond-2.18.2-1.linux-64.sh
+
+    - name: Call shell script
+      run: ./lilypond-2.18.2-1.linux-64.sh
+
+    - name: Where am I
+      run: ls
+
+    - name: Convert files (lilypond 2.18.2)
+      run: |
+        ./convert-songs-2.18.2.sh
+
+    - name: Save artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: converted_songs
+        path: converted_songs
