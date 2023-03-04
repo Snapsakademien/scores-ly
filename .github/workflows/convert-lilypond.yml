@@ -28,7 +28,7 @@ jobs:
 
     - name: Create files
       run: |
-        convertsongs.sh
+        ./convert-songs.sh
 
     - name: Save artifacts
       uses: actions/upload-artifact@v2
