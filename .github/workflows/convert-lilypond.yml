@@ -26,7 +26,7 @@ jobs:
     - name: Where am I
       run: ls
 
-    - name: Create files
+    - name: Convert files (lilypond 2.18.2)
       run: |
         ./convert-songs.sh
 
