@@ -39,7 +39,5 @@ for file in *; do
 
     echo -e "---" >> "$metadata_filename"
 
-    break
-
     fi
 done
