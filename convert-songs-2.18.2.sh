@@ -21,8 +21,8 @@ for file in *; do
 
     # If the metadata was unavailable from the score it can be found in the htitle & hcomposer
     if [ -z "$title" ]; then
-        title=$(grep 'htitle=' songs/AveMaria.ly | sed 's/htitle="\(.*\)"/\1/')
-        composer=$(grep 'hcomposer=' songs/AveMaria.ly | sed 's/hcomposer="\(.*\)"/\1/')
+        title=$(grep 'htitle=' $file | sed 's/htitle="\(.*\)"/\1/')
+        composer=$(grep 'hcomposer=' $file | sed 's/hcomposer="\(.*\)"/\1/')
     fi
 
     # Outfile
