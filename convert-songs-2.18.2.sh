@@ -15,18 +15,21 @@ for file in *; do
     title=$(echo "$score" | grep -o 'title = "[^"]*"' | sed 's/title = "//;s/"//')
     # Get composer
     composer=$(echo "$score" | grep -o 'composer = "[^"]*"' | sed 's/composer = "//;s/"//')
+    # Get svg_file
+    svg_file=$(basename "$output_directory_name"/*.svg)
 
     # Outfile
     metadata_filename="${output_directory_name}/${base_filename}.md"
 
     echo -e "---" >> "$metadata_filename"
     echo -e "title: $title" >> "$metadata_filename"
-    echo -e "composer: $composer" >> "$metadata_filename"
+    echo -e "author: $composer" >> "$metadata_filename"
+    echo -e "svgFile: $svg_file" >> "$metadata_filename"
     echo -e "midiFiles:" >> "$metadata_filename"
 
     for midi_file in "$output_directory_name"/*.midi; do
         midi_filename="$(basename "$midi_file")"
-        echo -e "    $midi_filename" >> "$metadata_filename"
+        echo -e "    - $midi_filename" >> "$metadata_filename"
     done
 
     echo -e "---" >> "$metadata_filename"
