@@ -1,4 +1,3 @@
-mkdir converted_songs
 cd songs/2_18_2
 for file in *; do
     if [ -f "$file" ]; then

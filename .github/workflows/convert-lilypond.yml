@@ -14,21 +14,43 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Download shell script
-      run: wget https://lilypond.org/downloads/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh
+    - name: Download LilyPond 2.24.0 archive
+      run: wget https://gitlab.com/lilypond/lilypond/-/releases/v2.24.0/downloads/lilypond-2.24.0-linux-x86_64.tar.gz
 
-    - name: Make shell script executable
-      run: chmod +x lilypond-2.18.2-1.linux-64.sh
+    - name: Install LilyPond 2.24.0
+      run: tar -xzvf lilypond-2.24.0-linux-x86_64.tar.gz
 
-    - name: Call shell script
-      run: ./lilypond-2.18.2-1.linux-64.sh
+    - name: make converted_songs directory
+      run: mkdir converted_songs
 
-    - name: Convert files (lilypond 2.18.2)
+    - name: ls
+      run: ls
+
+    - name: Convert files (lilypond 2.24.0)
       run: |
-        ./convert-songs-2_18_2.sh
-        
+        ./convert-songs-2_24.0.sh
+
     - name: Save artifacts
       uses: actions/upload-artifact@v2
       with:
         name: converted_songs
         path: converted_songs
+        
+    # - name: Download shell script
+    #   run: wget https://lilypond.org/downloads/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh
+
+    # - name: Make shell script executable
+    #   run: chmod +x lilypond-2.18.2-1.linux-64.sh
+
+    # - name: Call shell script
+    #   run: ./lilypond-2.18.2-1.linux-64.sh
+
+    # - name: Convert files (lilypond 2.18.2)
+    #   run: |
+    #     ./convert-songs-2_18_2.sh
+
+    # - name: Save artifacts
+    #   uses: actions/upload-artifact@v2
+    #   with:
+    #     name: converted_songs
+    #     path: converted_songs
