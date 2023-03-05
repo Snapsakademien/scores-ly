@@ -235,7 +235,7 @@ melodyLyricsThree = \lyricmode {
 
 %EVIG VILA
 
-\score {
+\score { % centered <<
 
 	\header {
 		title = "Evig vila"
