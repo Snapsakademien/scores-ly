@@ -24,7 +24,12 @@ for file in *; do
     echo -e "---" >> "$metadata_filename"
     echo -e "title: $title" >> "$metadata_filename"
     echo -e "author: $composer" >> "$metadata_filename"
-    echo -e "svgFile: $svg_file" >> "$metadata_filename"
+    echo -e "svgFiles:" >> "$metadata_filename"
+    for svg_file in "$output_directory_name"/*.svg; do
+        svg_filename="$(basename "$svg_file")"
+        echo -e "    - $svg_filename" >> "$metadata_filename"
+    done
+
     echo -e "midiFiles:" >> "$metadata_filename"
 
     for midi_file in "$output_directory_name"/*.midi; do
