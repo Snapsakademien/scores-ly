@@ -8,19 +8,27 @@ for file in *; do
     mkdir "${output_directory_name}"
     /home/runner/bin/lilypond -dbackend=svg -o "$output_directory_name" "$file"
 
-    # Get the metadat
+    # Get svg_file
+    svg_file=$(basename "$output_directory_name"/*.svg)
+
+    # Get the metadata from the score
     score=$(grep -A 10 '\\score' $file)
 
-    # Get title
+    # Get title from score
     title=$(echo "$score" | grep -o 'title = "[^"]*"' | sed 's/title = "//;s/"//')
     # Get composer
     composer=$(echo "$score" | grep -o 'composer = "[^"]*"' | sed 's/composer = "//;s/"//')
-    # Get svg_file
-    svg_file=$(basename "$output_directory_name"/*.svg)
+
+    # If the metadata was unavailable from the score it can be found in the htitle & hcomposer
+    if [ -z "$title" ]; then
+        title=$(grep 'htitle=' songs/AveMaria.ly | sed 's/htitle="\(.*\)"/\1/')
+        composer=$(grep 'hcomposer=' songs/AveMaria.ly | sed 's/hcomposer="\(.*\)"/\1/')
+    fi
 
     # Outfile
     metadata_filename="${output_directory_name}/${base_filename}.md"
 
+    # Write the metadata
     echo -e "---" >> "$metadata_filename"
     echo -e "title: $title" >> "$metadata_filename"
     echo -e "author: $composer" >> "$metadata_filename"
