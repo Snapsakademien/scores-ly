@@ -9,7 +9,7 @@ for file in *; do
     /home/runner/bin/lilypond -dbackend=svg -o "$output_directory_name" "$file"
 
     # Get the metadat
-    score=$(grep -A 10 '\\score' songs/varRedo.ly)
+    score=$(grep -A 10 '\\score' $file)
 
     # Get title
     title=$(echo "$score" | grep -o 'title = "[^"]*"' | sed 's/title = "//;s/"//')
