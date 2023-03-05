@@ -25,7 +25,8 @@ for file in *; do
     echo -e "midiFiles:" >> "$metadata_filename"
 
     for midi_file in "$output_directory_name"/*.midi; do
-        echo -e "$midi_file" >> "$metadata_filename"
+        midi_filename="$(basename "$midi_file")"
+        echo -e "    $midi_filename" >> "$metadata_filename"
     done
 
     echo -e "---" >> "$metadata_filename"
