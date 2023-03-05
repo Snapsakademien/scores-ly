@@ -1,10 +1,10 @@
 mkdir converted_songs
-cd songs
+cd songs/2_18_2
 for file in *; do
     if [ -f "$file" ]; then
     # Create a dir and convert the song
     base_filename=`basename "${file%.*}"`
-    output_directory_name="../converted_songs/2_18_2/${base_filename}"
+    output_directory_name="../converted_songs/${base_filename}"
     mkdir "${output_directory_name}"
     /home/runner/bin/lilypond -dbackend=svg -o "$output_directory_name" "$file"
 
