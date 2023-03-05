@@ -9,3 +9,6 @@
 *.toc
 *.txt
 *.ini
+
+_site
+node_modules

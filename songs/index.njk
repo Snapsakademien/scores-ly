@@ -1,0 +1,11 @@
+---
+layout: main.njk
+eleventyExcludeFromCollections: true
+---
+<ul>
+{%- for song in collections.songs -%}
+<li>
+    <a href="{{song.url}}">{{song.data.title}} - {{song.data.author}}</a>
+</li>
+{%- endfor -%}
+</ul>
