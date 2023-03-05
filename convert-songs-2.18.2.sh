@@ -17,18 +17,18 @@ for file in *; do
     composer=$(echo "$score" | grep -o 'composer = "[^"]*"' | sed 's/composer = "//;s/"//')
 
     # Outfile
-    metadata_filename = "${output_directory_name}/${base_filename}.md"
+    metadata_filename="${output_directory_name}/${base_filename}.md"
 
-    echo -e "---" >> "$output_directory_name"
-    echo -e "title: $title" >> "$output_directory_name"
-    echo -e "composer: $composer" >> "$output_directory_name"
-    echo -e "midiFiles:" >> "$output_directory_name"
+    echo -e "---" >> "$metadata_filename"
+    echo -e "title: $title" >> "$metadata_filename"
+    echo -e "composer: $composer" >> "$metadata_filename"
+    echo -e "midiFiles:" >> "$metadata_filename"
 
-    for midi_file in "$output_directory_name"/*.midi; do
+    for midi_file in "$metadata_filename"/*.midi; do
         echo -e "$midi_file" >> "$output_directory_name"
     done
 
-    echo -e "---" >> "$output_directory_name"
+    echo -e "---" >> "$metadata_filename"
 
     break
 
