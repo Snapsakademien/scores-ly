@@ -22,7 +22,7 @@ global = {
 	\time 6/8
 }
 
-\include "../Include/midiVolume.ly"
+\include "../../Include/midiVolume.ly"
 
 %TILL MINA VÄNNER
 
@@ -286,4 +286,4 @@ tTwoLyricOne = \lyricmode {
 	}
 }  % End score
 
-\include "../Include/midiTillMinaVanner.ly"
+\include "../../Include/midiTillMinaVanner.ly"

@@ -22,7 +22,7 @@ global = {
 	\time 3/4
 }
 
-\include "../Include/midiVolume.ly"
+\include "../../Include/midiVolume.ly"
 
 %KÄRASTE BRÖDER
 

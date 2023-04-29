@@ -21,7 +21,7 @@ global = {
 	\key d \major
 }
 
-\include "../Include/midiVolume.ly"
+\include "../../Include/midiVolume.ly"
 
 %SÅNGARFANAN
 
@@ -284,4 +284,4 @@ bTwoLyric = \lyricmode {
 	}
 }  % End score
 
-\include "../Include/midiSangarfanan.ly"
+\include "../../Include/midiSangarfanan.ly"

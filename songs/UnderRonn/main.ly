@@ -21,7 +21,7 @@ global = {
 	\key ges \major
 }
 
-\include "../Include/midiVolume.ly"
+\include "../../Include/midiVolume.ly"
 
 %UNDER RÖNN OCH SYREN
 
@@ -249,4 +249,4 @@ lyricThree = \lyricmode {
 	}
 }  % End score
 
-\include "../Include/midiUnderRonn.ly"
+\include "../../Include/midiUnderRonn.ly"

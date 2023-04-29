@@ -21,7 +21,7 @@ global = {
   \key a \major
 }
 
-\include "../Include/midiVolume.ly"
+\include "../../Include/midiVolume.ly"
 
 %SÅ LUNKA VI SÅ SMÅNINGOM
 
@@ -290,4 +290,4 @@ bTwoLyricThree = \lyricmode {
 	}
 }  % End score
 
-\include "../Include/midiSaLunkaVi.ly"
+\include "../../Include/midiSaLunkaVi.ly"

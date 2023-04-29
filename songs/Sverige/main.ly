@@ -22,7 +22,7 @@ global = {
 	\key bes \major
 }
 
-\include "../Include/midiVolume.ly"
+\include "../../Include/midiVolume.ly"
 
 %SVERIGE
 
@@ -338,4 +338,4 @@ bTwoLyric = \lyricmode {
 	}
 }  % End score
 
-\include "../Include/midiVarRedo.ly"
+\include "../../Include/midiVarRedo.ly"

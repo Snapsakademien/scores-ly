@@ -21,7 +21,7 @@ global = {
 	\key g \major
 }
 
-\include "../Include/midiVolume.ly"
+\include "../../Include/midiVolume.ly"
 
 %GLAD SÅSOM FÅGELN
 
@@ -353,4 +353,4 @@ bTwoLyric = \lyricmode {
 		}
 	}
 }  % End score
-\include "../Include/midiGladSas.ly"
+\include "../../Include/midiGladSas.ly"
