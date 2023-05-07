@@ -13,10 +13,13 @@ Svg file not found
 <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.5.0"></script>
 {%- for midi in midiFiles -%}
 
-<midi-player
+<div>
+  <span>{{midi}}</span>
+  <midi-player
   src="{{midi}}"
   sound-font>
-</midi-player>
+  </midi-player>
+</div>
 
 {%- else -%}
 Midi file not found

@@ -2,10 +2,10 @@
 layout: main.njk
 eleventyExcludeFromCollections: true
 ---
-<ul>
+<ul id="song_list">
 {%- for song in collections.songs -%}
-<li>
-    <a href="{{song.url}}">{{song.data.title}} - {{song.data.author}}</a>
+<li class="song_list__item">
+    <a href="{{song.url}}" class="song_list__link">{{song.data.title}} - {{song.data.author}}</a>
 </li>
 {%- endfor -%}
 </ul>
