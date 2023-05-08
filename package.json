@@ -12,9 +12,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0"
+    "@11ty/eleventy": "^2.0.0",
+    "js-yaml": "^4.1.0"
   },
   "dependencies": {
-    "js-yaml": "^4.1.0"
+    "glob": "^10.2.2"
   }
 }

@@ -1,13 +1,13 @@
 ---
 title: Vårsång (Glad såsom fågeln)
 author: Prins Gustaf
-svgFiles:
-    - ../GladSas-1.svg
-    - ../GladSas-2.svg
 midiFiles:
-    - ../GladSas.midi
-    - ../GladSas-1.midi
-    - ../GladSas-2.midi
-    - ../GladSas-3.midi
-    - ../GladSas-4.midi
+  - songs/GladSas-1.midi
+  - songs/GladSas-2.midi
+  - songs/GladSas-3.midi
+  - songs/GladSas-4.midi
+  - songs/GladSas.midi
+svgFiles:
+  - songs/GladSas-1.svg
+  - songs/GladSas-2.svg
 ---
