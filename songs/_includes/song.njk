@@ -4,7 +4,7 @@ layout: main.njk
 <h1>{{title}} - {{author}}</h1>
 
 {%- for file in svgFiles -%}
-<img src="{{file}}"/>
+<img src="/{{file}}"/>
 
 {%- else -%}
 Svg file not found
@@ -16,7 +16,7 @@ Svg file not found
 <div>
   <span>{{midi}}</span>
   <midi-player
-  src="{{midi}}"
+  src="/{{midi}}"
   sound-font>
   </midi-player>
 </div>
