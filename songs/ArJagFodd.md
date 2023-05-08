@@ -1,8 +1,10 @@
 ---
 title: Är Jag Född
 author: Bellman
-svgFile: ArJagFodd.svg
+svgFiles:
+  - ArJagFodd-1.svg
+  - ArJagFodd-2.svg
 midiFiles:
-    - ArJagFodd1
-    - ArJagFodd2
+  - ArJagFodd-1.midi
+  - ArJagFodd-2.midi
 ---
