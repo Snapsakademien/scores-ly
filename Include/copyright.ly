@@ -2,6 +2,12 @@ pageHeader = \header {
 		tagline = ##f
 	}
 
+arJagFoddHeader = \header {
+	title = "FS 16 - Är jag född så vill jag leva"
+	composer = "Carl-Michael Bellman"
+	arranger = "J P Cronhamn"
+}
+
 duGamlaDuFriaHeader = \header {
 	title = "Du gamla, du fria"
 	composer = "Trad."
@@ -10,11 +16,21 @@ duGamlaDuFriaHeader = \header {
 }
 
 aveMariaRachmaninoveHeader =	\header {
-		title = "Bogoroditse Djevo"
-		subtitle = "ur All-night Vigil"
-		composer = "Sergej Rachmaninov"
-		arranger = "Bearb. för manskör av Joakim Sandström"
-	}
+	title = "Bogoroditse Djevo"
+	subtitle = "ur All-night Vigil"
+	composer = "Sergej Rachmaninov"
+	arranger = "Bearb. för manskör av Joakim Sandström"
+}
+
+evigVilaHeader = \header {
+	title = "Evig vila"
+	composer = "Franz Schubert"
+}
+
+fjarilnVingadHeader = \header {
+	title = "FS 64 - Fjäriln vingad"
+	composer = "Carl-Michael Bellman"
+}
 
 letMeCallYouSweetheartHeader = \header {
 	title = "Let me call you Sweetheart"
@@ -135,4 +151,72 @@ varRedoHeader = \header {
 	title = "Var redo"
 	composer = "Carl-Michael Bellman"
 	arranger =  "J.P. Cronham"
+}
+
+gladSasomHeader = \header {
+	title = "Vårsång"
+	subtitle = "Glad såsom fågeln"
+	composer = "Prins Gustaf"
+	poet = "Herman Sätherberg"
+}
+
+integerVitaeHeader = 	\header {
+	title = "Integer Vitae"
+	composer = "Friedrich Ferdinand Flemming"
+	poet = "Q. Horatius Flaccus"
+}
+
+karasteBroderHeader = \header {
+	title = "Käraste bröder"
+	composer = "Carl-Michael Bellman"
+	arranger = "Johan Alfred Ahlström"
+}
+
+kungshymnenHeader = \header {
+	title = "Kungshymnen"
+	composer = "Otto Lindblad"
+}
+
+langtanTillLandetHeader =	\header {
+	title = "Längtan till landet"
+	composer = "Otto Lindblad"
+	poet = "Herman Sätherberg"
+}
+
+underRonnOchSyrenHeader = \header {
+		title = "Under rönn och syrén"
+		composer = "Herman Palm"
+		poet = "Zacharias Topelius"
+	}
+
+saLunkaViHeader =	\header {
+	title = "Så lunka vi så småningom"
+	composer = "C.M. Bellman"
+	arranger = "J.P. Cronham"
+}
+
+sangarfananHeader =	\header {
+	title = "Sångarfanan"
+	composer = "F. A. Frieberg"
+}
+
+enSommaraftonHeader =	\header {
+	title = "En sommarafton"
+	composer = "A. F. Lindblad"
+}
+
+sverigeHeader =	\header {
+	title = "Sverige"
+	composer = "Wilhelm Stenhammar"
+	poet = "Esias Tegnér"
+}
+
+varmlandsvisanHeader = \header {
+	title = "Ack Värmland du sköna"
+	composer = "A. Fryxell"
+}
+
+tillMinaVannerHeader = 	\header {
+	title = "Till mina vänner"
+	composer = "Erik Gustaf Geijer"
 }
