@@ -1,6 +1,4 @@
 ---
-title: Das Königslied
-author: "Adolf Eduard Marschner"
 midiFiles:
   - songs/DasKonigslied-1.midi
   - songs/DasKonigslied-2.midi
@@ -9,4 +7,6 @@ midiFiles:
   - songs/DasKonigslied.midi
 svgFiles:
   - songs/DasKonigslied.svg
+title: Das Königslied
+author: Adolf Eduard Marschner
 ---
