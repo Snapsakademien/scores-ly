@@ -14,23 +14,21 @@ const songShortNames = fs.readdirSync('./songs', {
         totalArray.push(currentVal.name);
         return totalArray;
     }
-    
-    if(!currentVal.name.includes(".ly")) {
-        return totalArray;
-    }
-
-    const filename = currentVal.name.split('.')[0];
-    totalArray.push(filename);
     return totalArray;
-
 }, []);
 
 //console.log(songShortNames);
 
 songShortNames.forEach((shortName) => {
-    const metadata = {};
+    
+    const yamlFile = globSync(`./songs/${shortName}/*.yaml`)[0];
+    if(!yamlFile.length){
+        return;
+    }
+    const metadata = yaml.load(fs.readFileSync(yamlFile));
 
-    const midiFiles = globSync(`./songs/${shortName}*.midi`).reverse();
+
+    const midiFiles = globSync(`./songs/${shortName}/*.midi`).reverse();
     
     if(!midiFiles){
         console.log(shortName, 'does not have any MIDI files');
@@ -38,7 +36,7 @@ songShortNames.forEach((shortName) => {
     metadata.midiFiles = midiFiles;
     //console.log(metadata.midiFiles);
 
-    const svgFiles = globSync(`./songs/${shortName}*.svg`).reverse();
+    const svgFiles = globSync(`./songs/${shortName}/*.svg`).reverse();
     if(!svgFiles) {
         console.log(shortName, 'does not have any SVG files');
     }
@@ -46,19 +44,9 @@ songShortNames.forEach((shortName) => {
 
     //const mdFile = globSync(`./songs/${shortName}.md`);
 
-    const yamlFile = globSync(`./songs/${shortName}.yaml`);
-    if(!yamlFile.length){
-        return;
-    }
-
-    const yamlData = yaml.load(fs.readFileSync(yamlFile[0]));
-    console.log(yamlData);
-    metadata.title = yamlData.title;
-    metadata.author = yamlData.author;
-
     const meta = yaml.dump(metadata);
     console.log(meta);
 
-    fs.writeFileSync(`./songs/${shortName}.md`, `---\n${meta}---`);
+    fs.writeFileSync(`./songs/${shortName}/index.md`, `---\n${meta}---`);
 
 });
