@@ -1,10 +1,12 @@
-const yaml = require("js-yaml");
+// const yaml = require("js-yaml");
 
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addDataExtension("yaml", (contents, filePath) => {
-        console.log("Trying to process ", filePath);
-        return yaml.load(contents);
-    });
+    eleventyConfig.setUseGitIgnore(false);
+
+    // eleventyConfig.addDataExtension("yaml", (contents, filePath) => {
+    //     console.log("Trying to process ", filePath);
+    //     return yaml.load(contents);
+    // });
 
 
     //eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
