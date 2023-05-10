@@ -17,36 +17,34 @@ const songShortNames = fs.readdirSync('./songs', {
     return totalArray;
 }, []);
 
-//console.log(songShortNames);
-
 songShortNames.forEach((shortName) => {
-    
+
     const yamlFile = globSync(`./songs/${shortName}/*.yaml`)[0];
-    if(!yamlFile.length){
+    if(!yamlFile){
         return;
     }
     const metadata = yaml.load(fs.readFileSync(yamlFile));
 
 
-    const midiFiles = globSync(`./songs/${shortName}/*.midi`).reverse();
+    const midiPaths = globSync(`./songs/${shortName}/*.midi`).reverse();
+
     
-    if(!midiFiles){
+    if(!midiPaths){
         console.log(shortName, 'does not have any MIDI files');
     }
-    metadata.midiFiles = midiFiles;
-    //console.log(metadata.midiFiles);
+    metadata.midiFiles = midiPaths.map((path) => {
+        return path.substring(5); // Get path without '/songs'
+    });
 
-    const svgFiles = globSync(`./songs/${shortName}/*.svg`).reverse();
-    if(!svgFiles) {
+    const svgPaths = globSync(`./songs/${shortName}/*.svg`).reverse();
+    if(!svgPaths) {
         console.log(shortName, 'does not have any SVG files');
     }
-    metadata.svgFiles = svgFiles;
-
-    //const mdFile = globSync(`./songs/${shortName}.md`);
+    metadata.svgFiles = svgPaths.map((path) => {
+        return path.substring(5); // Get path without '/songs'
+    });;
 
     const meta = yaml.dump(metadata);
     console.log(meta);
-
     fs.writeFileSync(`./songs/${shortName}/index.md`, `---\n${meta}---`);
-
 });
