@@ -1,0 +1,26 @@
+---
+layout: main.njk
+---
+<h1>{{title}} - {{author}}</h1>
+
+{%- for file in svgFiles -%}
+<img src="{{file}}"/>
+
+{%- else -%}
+Svg file not found
+{%- endfor -%}
+
+<script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.5.0"></script>
+{%- for midi in midiFiles -%}
+
+<div>
+  <span>{{midi}}</span>
+  <midi-player
+  src="{{midi}}"
+  sound-font>
+  </midi-player>
+</div>
+
+{%- else -%}
+Midi file not found
+{%- endfor -%}
