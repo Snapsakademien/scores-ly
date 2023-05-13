@@ -1,3 +1,4 @@
+#!/bin/bash
 cd songs
 
 for dir in */; do
