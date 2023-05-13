@@ -53,12 +53,12 @@ jobs:
         run: npm run build:11ty --pathPrefix=scores-ly
       - name: Build artifact archive
         run: |
-          chmod -c -R +rX "$env.INPUT_PATH" | while read line; do
+          chmod -c -R +rX "$INPUT_PATH" | while read line; do
             echo "::warning title=Invalid file permissions automatically fixed::$line"
           done
           tar \
             --dereference --hard-dereference \
-            --directory "env.$INPUT_PATH" \
+            --directory "$INPUT_PATH" \
             -cvf "$RUNNER_TEMP/artifact.tar" \
             --exclude=.git \
             --exclude=.github \
