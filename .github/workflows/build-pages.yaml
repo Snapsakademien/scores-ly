@@ -50,7 +50,7 @@ jobs:
       - name: Generate .md files for eleventy
         run: npm run build:pre-11ty
       - name: Build eleventy
-        run: npm run build:11ty --pathPrefix=scores-ly
+        run: npm run build:11ty
       - name: Build artifact archive
         run: |
           chmod -c -R +rX "$INPUT_PATH" | while read line; do

@@ -8,7 +8,7 @@
     "build": "npm run build:songs && npm run build:pre-11ty && npm run build:11ty",
     "build:songs": "./build-lilypond.sh",
     "build:pre-11ty": "node generate_11ty_data.js",
-    "build:11ty": "npx @11ty/eleventy --input=songs --output=_site",
+    "build:11ty": "npx @11ty/eleventy --input=songs --output=_site --pathprefix=scores-ly",
     "clean": "cd songs && find . -name '*.svg' -type f -delete && find . -name '*.midi' -type f -delete && find . -name '*.svg' -type f -delete",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
