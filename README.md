@@ -18,7 +18,7 @@ The files are written with [Lilypond](http://lilypond.org/). It is a good idea t
 ## How to develop the website
 1. Install `nodejs`
 2. Run `npm install` to install dependencies
-3. RUn ´npm run build:songs´ to generate SVGs and MIDI files
+3. RUn `npm run build:songs` to generate SVGs and MIDI files
 4. Run `npm run build:pre-11ty` to generate metadata files for 11ty to use
 5. Run `npm start` to develop with 11ty
 
