@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Tenor+Sans&display=swap');
+:root {
+    --main-color: blue;
+    --heading-font: 'EB Garamond', serif;
+    --body-font: 'Tenor Sans', sans-serif;
+    --spacing-1: 0.5rem;
+    --font-color: #222;
+}
+
+body {
+    font-family: var(--body-font);
+    box-sizing: content-box;
+    color: var(--font-color);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    font-weight: normal;
+}
+
+#song_list {
+    list-style-type: none;
+    display: grid;
+    gap: var(--spacing-1);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: var(--spacing-1);
+}
+
+.song_list__link {
+    position: relative;
+    overflow: hidden;
+    font-size: larger;
+    color: var(--font-color);
+    text-decoration: none;
+
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px #888;
+    
+    height: 100px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.song_list__link::after {
+    opacity: 0.2;
+    position: absolute;
+    content: '♫';
+    font-size: 8rem;
+    right: 0;
+    bottom: -25px;
+}
+
+.song_list__link:hover {
+    text-decoration: underline;
+}
+
+.song_list__title {
+    font-family: var(--heading-font);
+    font-size: 1.6rem;
+}
+
+.song_list__author {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

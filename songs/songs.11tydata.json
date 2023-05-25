@@ -1,0 +1,5 @@
+{
+  "layout": "song.njk",
+  "tags": "songs",
+  "permalink": "songs/{{ title | slugify }}/"
+}

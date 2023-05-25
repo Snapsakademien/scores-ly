@@ -1,0 +1,25 @@
+{
+  "name": "scores-ly",
+  "version": "1.0.0",
+  "description": "Initiative by Joakim Sandström. Tech support by Tobias Skarhed.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --input=songs --output=_site --serve",
+    "build": "npm run build:songs && npm run build:pre-11ty && npm run build:11ty",
+    "build:songs": "./build-lilypond.sh",
+    "build:pre-11ty": "node generate_11ty_data.js",
+    "build:11ty": "npx @11ty/eleventy --input=songs --output=_site --pathprefix=scores-ly",
+    "clean": "cd songs && find . -name '*.svg' -type f -delete && find . -name '*.midi' -type f -delete && find . -name '*.svg' -type f -delete",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "js-yaml": "^4.1.0"
+  },
+  "dependencies": {
+    "glob": "^10.2.2"
+  }
+}

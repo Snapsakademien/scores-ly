@@ -9,3 +9,9 @@
 *.toc
 *.txt
 *.ini
+*.svg
+
+_site
+node_modules
+.idea
+/songs/**/*.md
