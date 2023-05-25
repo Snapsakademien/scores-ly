@@ -2,11 +2,7 @@
 	\bookOutputName "FestenKanBorja"
 	\score { % centered <<
 
-		\header {
-			title = "Festen kan börja"
-			composer = "Trad."
-			arranger =  "A. Jahnke"
-		}
+		\festenKanBorjaHeader
 
 		\new ChoirStaff <<
 			\new Staff = "tenor" <<

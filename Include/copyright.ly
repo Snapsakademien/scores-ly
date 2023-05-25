@@ -104,6 +104,13 @@ metsamiehenJoumalauluHeader = \header {
 	composer = "Edvard Hermes"
 }
 
+festenKanBorjaHeader = \header {
+	title = "Festen kan börja"
+	composer = "Trad."
+	arranger =  "A. Jahnke"
+}
+
+
 norgesBedsteHeader = \header {
 	title = "Norska Halvan"
 	composer = "Halfdan Kjerulf"
