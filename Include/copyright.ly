@@ -110,11 +110,15 @@ festenKanBorjaHeader = \header {
 	arranger =  "A. Jahnke"
 }
 
+norgesFjeldeHeader = \header {
+	title = "Norges Fjelde"
+	composer = "Halfdan Kjerulf"
+	poet =  "Henrik Wergeland"
+}
 
 norgesBedsteHeader = \header {
 	title = "Norska Halvan"
 	composer = "Halfdan Kjerulf"
-	poet =  "Okänd"
 }
 
 norrlandHeader = \header {
@@ -197,7 +201,7 @@ underRonnOchSyrenHeader = \header {
 	}
 
 saLunkaViHeader =	\header {
-	title = "Så lunka vi så småningom"
+	title = "Så lunka vi så småningom - FS 21"
 	composer = "C.M. Bellman"
 	arranger = "J.P. Cronham"
 }
