@@ -31,7 +31,7 @@ dynamics = \relative c {
 
 	s4\p | s2 | s2 | s2 | s4.
 
-	s8\mf | s2\< | s2 | s2\!\f\dim | s4.\!^\p
+	s8\mf | s2\< | s2 | s2\!\f\dim | s4.\!\p
 	s8\< | s4\fz s4\> | s\! s\p | s2 | s4.
 	\bar "|."
 }

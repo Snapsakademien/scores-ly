@@ -21,3 +21,15 @@ tOneLyricTwo = \lyricmode {
 	som kom -- mer att gäs -- ta vid Klar -- äl -- vens strand,
 	han fin -- ner blott brö -- der och syst -- rar.
 }
+
+tOneLyricThree = \lyricmode {
+        I Vär -- me -- land ja, där __ vill jag byg -- ga och bo, 
+        med enk -- las -- te lyck -- a för -- _ nöj -- der.
+        Dess da _ -- lar och skog _ ge mig tyst -- nad -- ens ro,
+        och luf -- ten är frisk _ på dess höj -- der.
+  
+        Och for -- sar -- na sjung -- a sin ljuv -- li -- ga sång,
+  
+        vid den _ vill jag som -- na så stil -- _ la en gång
+        och vi -- la i värm _ -- länd -- ska jor -- den.
+}

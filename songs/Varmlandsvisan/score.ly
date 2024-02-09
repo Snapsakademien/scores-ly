@@ -24,6 +24,10 @@
 			\lyricsto "tOne"
 			\tOneLyricOne
 		}
+		\new Lyrics  {
+			\lyricsto "tOne"
+			\tOneLyricThree
+		}
 		\new Staff = "staff" <<
 			\global
 			\clef "bass"

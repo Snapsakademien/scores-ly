@@ -224,7 +224,8 @@ sverigeHeader =	\header {
 
 varmlandsvisanHeader = \header {
 	title = "Ack Värmland du sköna"
-	composer = "A. Fryxell"
+	composer = "Anders Fryxell"
+	poet = "Fredrik August Dahlgren"
 }
 
 tillMinaVannerHeader = 	\header {
