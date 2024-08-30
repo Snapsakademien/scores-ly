@@ -32,6 +32,11 @@ fjarilnVingadHeader = \header {
 	composer = "Carl-Michael Bellman"
 }
 
+bacchiHarolderHeader = \header {
+	title = "FS 1 - Om Bacchi adelsmän och härolder"
+	composer = "Carl-Michael Bellman"
+}
+
 letMeCallYouSweetheartHeader = \header {
 	title = "Let me call you Sweetheart"
 	composer = "Trad"
@@ -69,6 +74,12 @@ finskaHalvanHeader = \header {
 	title = "Finska Halvan"
 	composer = "Adolf Eduard Marschner"
 	poet =  "Oscar Ludwig Bernhard Wolff"
+}
+
+gutarBadNattOchDagHeader = \header {
+	title = "FE 1 - Gutår båd natt och dag"
+	composer = "Carl-Michael Bellman"
+	arranger = "J P Cronhamn"
 }
 
 halvanHeader = \header {
@@ -169,6 +180,12 @@ gladSasomHeader = \header {
 	subtitle = "Glad såsom fågeln"
 	composer = "Prins Gustaf"
 	poet = "Herman Sätherberg"
+}
+
+gubbenArGammalHeader = \header {
+	title = "Gubben är gammal"
+	composer = "Carl-Michael Bellman"
+	arranger = "Johan Alfred Ahlström"
 }
 
 integerVitaeHeader = 	\header {

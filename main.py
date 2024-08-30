@@ -1,3 +1,5 @@
+from typing import Any
+
 import os
 import glob
 
@@ -6,17 +8,16 @@ folderList = os.walk((root_folder + "\\songs"))
 next(folderList)
 
 program = "main.ly"
-score = "score.ly"
+score: Any = "score.ly"
 song_title = ""
 content_list: list = []
 
 with open("toc.txt", "w") as f:
     for x in folderList:
-        if "_includes" in x:
-            print()
-        else:
-            os.chdir(x[0])
-            print(x[0])
+        os.chdir(x[0])
+        print(x[0])
+        path_x = os.getcwd() + "\\score.ly"
+        if os.path.exists(path_x):
             with open(score, "r") as s:
                 lines = s.readlines()
                 for line in lines:
@@ -25,9 +26,10 @@ with open("toc.txt", "w") as f:
                         break
             os.system(program)
             pdf = glob.glob("*.pdf")[0]
-            with open(root_folder + "\\include\\copyright.ly") as c:
+            print(os.path.exists(root_folder + "\\Include\\copyright.ly"))
+            with open(root_folder + "\\Include\\copyright.ly", 'r', encoding="utf-8") as c:
                 lines = c.readlines()
-                l = 0
+                nl = 0
                 for line in lines:
                     if len(line.split()) > 0 and song_title == line.split()[0]:
                         nl = lines.index(line)
