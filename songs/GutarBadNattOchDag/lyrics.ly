@@ -6,7 +6,7 @@ tOneLyricOne = \lyricmode {
 	Si vår sys -- ter Sti -- na,
 	hen -- nes flas -- kor ski -- na;
 	kä -- ra, ta hit sto -- pet,
-	kä -- ra, ta  hit sto -- pet
+	kä -- ra, ta  hit sto -- pet gri -- na
 }
 
 tOneLyricTwo = \lyricmode {
@@ -14,10 +14,10 @@ tOneLyricTwo = \lyricmode {
 	Lång är bu -- tel -- jen;
 	\repeat unfold 11 {\skip 1}
 
-	Caj -- sa Sti -- na står och tap -- par;
-	He -- la hjer -- tat i mig klap -- par;
+	Caj -- sa Sti -- na tap -- par;
+	He -- la hjer -- tat klap -- par;
 	Ba -- ra in -- gen sto -- pet,
-	Ba -- ra in -- gen sto -- pet
+	Ba -- ra in -- gen sto -- pet nap -- par
 }
 
 tTwoLyricOne = \lyricmode {
@@ -27,7 +27,7 @@ tTwoLyricOne = \lyricmode {
 
 tTwoLyricTwo = \lyricmode {
 	\repeat unfold 40 {\skip 1}
-	ba -- ra sto -- pet
+	Ba -- ra in -- gen
 }
 
 bOneLyricOne = \lyricmode {
@@ -80,9 +80,9 @@ bTwoLyricTwo = \lyricmode {
 	Lång är bu -- tel -- jen;
 	\repeat unfold 11 {\skip 1}
 
-	Caj -- sa Sti -- na står och tap -- par;
-	He -- la hjer -- tat i mig klap -- par;
-	Ba -- ra sto -- pet
+	Caj -- sa Sti -- na tap -- par;
+	He -- la hjer -- tat klap -- par;
+	Ba -- ra in -- gen
 }
 
 introText = \markup {

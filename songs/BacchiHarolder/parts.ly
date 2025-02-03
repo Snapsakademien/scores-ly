@@ -52,8 +52,8 @@ tOne = \relative c' {
 	a4..-^ cis16 b8. d16 |
 	cis8. d16 e4 e,4 |
 	fis4.. a16 gis8. b16 |
-	a8. gis16 a4 e4^\fz |
-	a8. a16 cis8. d16 cis8. gis16 |
+	a8. gis16 a4 fis'4^\fz |
+	e8. d16 cis8. b16 a8. gis16 |
 	a4 r4 r4\fermata |
 
 	cis4 a8 d4 b8 |

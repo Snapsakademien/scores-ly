@@ -11,6 +11,7 @@ tOneLyricOne = \lyricmode {
 }
 
 tTwoLyricOne = \lyricmode {
+  \set stanza = #"1."
 	Bort allt vad o -- ro gör, bort allt vad hjär -- tat kväl -- jer.
 	Bäst att man väl -- jar bland des -- sa bu -- tel -- jer sin mag -- li -- kör.
 
@@ -21,6 +22,7 @@ tTwoLyricOne = \lyricmode {
 }
 
 tTwoLyricTwo = \lyricmode {
+  \set stanza = #"2."
 	Bort allt vad o -- ro gör, Allt är ju stoft och as -- ka.
 	Låt oss bli ras -- ka och töm -- ma vår flas -- ka bland brö -- der -- na!
 
