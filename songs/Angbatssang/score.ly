@@ -1,6 +1,4 @@
-\book{
-	\bookOutputName "Angbatssang"
-	\score { % centered <<
+full = \score { % centered <<
 
 		\angbatssangHeader
 
@@ -55,13 +53,11 @@
 			>>
 		>>
 	}  % End score
-}
+
 
 %ÅNGBÅTSSÅNG - FARVÄL, FARVÄL
 
-\book{
-	\bookOutputName "AngbatssangEnd"
-	\score { % centered <<
+end =	\score { % centered <<
 
 		\header {
 			title = "Ångbåtssång - Farväl, farväl"
@@ -119,4 +115,3 @@
 			>>
 		>>
 	}  % End score
-}

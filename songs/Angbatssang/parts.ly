@@ -215,7 +215,7 @@ bTwo = \relative c {
 
 	des2. d4 |
 	es4 es8. es16 bes4. es8 |
-	aes,2._\markup{\italic{D.C. al Fine}} r4
+	aes,2._\markup{\italic{D.C. al Fine}} s4
 }
 
 systemEnd = \relative c' {

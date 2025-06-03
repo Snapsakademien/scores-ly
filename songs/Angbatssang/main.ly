@@ -12,3 +12,12 @@
 \include "lyrics.ly"
 \include "midi.ly"
 \include "score.ly"
+
+\book{
+	\bookOutputName "Angbatssang"
+	\full
+}
+\book{
+	\bookOutputName "Angbatssang_end"
+	\end
+}

@@ -5,7 +5,7 @@ pageHeader = \header {
 arJagFoddHeader = \header {
 	title = "FS 16 - Är jag född så vill jag leva"
 	composer = "Carl-Michael Bellman"
-	arranger = "J P Cronhamn"
+	arranger = "J.P. Cronhamn"
 }
 
 duGamlaDuFriaHeader = \header {
@@ -79,7 +79,7 @@ finskaHalvanHeader = \header {
 gutarBadNattOchDagHeader = \header {
 	title = "FE 1 - Gutår båd natt och dag"
 	composer = "Carl-Michael Bellman"
-	arranger = "J P Cronhamn"
+	arranger = "J.P. Cronhamn"
 }
 
 halvanHeader = \header {
@@ -101,6 +101,7 @@ helanHeader = \header {
 islandHeader = \header {
 	title = "Island"
 	composer = "Henrik Möller"
+	poet = "Albert Ulrik Bååth"
 }
 
 kungKarlHeader = \header {
@@ -170,9 +171,9 @@ varmlandKantatHeader = \header {
 }
 
 varRedoHeader = \header {
-	title = "Var redo"
+	title = "FS 27 - Var redo"
 	composer = "Carl-Michael Bellman"
-	arranger =  "J.P. Cronham"
+	arranger =  "J.P. Cronhamn"
 }
 
 gladSasomHeader = \header {
@@ -183,7 +184,7 @@ gladSasomHeader = \header {
 }
 
 gubbenArGammalHeader = \header {
-	title = "Gubben är gammal"
+	title = "FE 27 - Gubben är gammal"
 	composer = "Carl-Michael Bellman"
 	arranger = "Johan Alfred Ahlström"
 }
@@ -195,7 +196,7 @@ integerVitaeHeader = 	\header {
 }
 
 karasteBroderHeader = \header {
-	title = "Käraste bröder"
+	title = "FE 9 - Käraste bröder"
 	composer = "Carl-Michael Bellman"
 	arranger = "Johan Alfred Ahlström"
 }
@@ -218,9 +219,9 @@ underRonnOchSyrenHeader = \header {
 	}
 
 saLunkaViHeader =	\header {
-	title = "Så lunka vi så småningom - FS 21"
-	composer = "C.M. Bellman"
-	arranger = "J.P. Cronham"
+	title = "FS 21 - Så lunka vi så småningom"
+	composer = "Carl-Michael Bellman"
+	arranger = "J.P. Cronhamn"
 }
 
 sangarfananHeader =	\header {

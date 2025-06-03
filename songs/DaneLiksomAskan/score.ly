@@ -1,6 +1,6 @@
 %DÅNE LIKSOM ÅSKAN, BRÖDER
 
-\score { % centered <<
+full = \score { % centered <<
 	\daneLiksomAskanHeader
 
 	\new ChoirStaff <<

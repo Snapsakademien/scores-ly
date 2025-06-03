@@ -12,3 +12,8 @@
 \include "lyrics.ly"
 \include "midi.ly"
 \include "score.ly"
+
+\book{
+	\bookOutputName "DaneLiksomAskan"
+	\full
+}

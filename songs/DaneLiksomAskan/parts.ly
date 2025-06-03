@@ -103,7 +103,7 @@ tTwo = \relative c {
 	b4 gis4 a4 b4 |
 	cis2 dis2 |
 	e4.. cis16 cis8. b16 a8. gis16 |
-	a2 r4 a8.\p a16 |
+	a2 r4 \once \override DynamicText.X-offset = #-2 a8.\p a16 |
 
 	\repeat volta 2 {
 
@@ -126,7 +126,7 @@ tTwo = \relative c {
 
 	\alternative {
 		{
-			a2 r4 a8.\p a16
+			a2 r4 \once \override DynamicText.X-offset = #-2 a8.\p a16
 		}{
 			a2 \once \override Voice.Rest.staff-position = #0 r4
 		}

@@ -11,7 +11,7 @@ systemUp = \relative c' {
 	\bar ":|.|:"
 	R1         | s2\mf\< s2\> | s1\f     | s2.\> s4\!
 	\bar ":|.|:"
-	s2\pp s2\< | s1\mf\cresc  | s1\ff | s2.\>^\markup { rall. } s4\!
+	s2\pp s2\< | s1\mf\cresc  | \once \override DynamicText.X-offset = #-2 s1\ff | s4.^\markup { \italic rall. } s4.\> s4\!
 	\bar "|."
 }
 
@@ -31,7 +31,7 @@ systemDown = \relative c' {
 	}
 	\break
 	\repeat volta 2 {
-		s2\pp s2\< | s1\mf\cresc  | s1\ff | s2.\>_\markup { rall. } s4\!
+		s2\pp s2\< | s1\mf\cresc  | \once \override DynamicText.X-offset = #-2 s1\ff | s4._\markup { \italic rall. } s4.\> s4\!
 	}
 
 }
