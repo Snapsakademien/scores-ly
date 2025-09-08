@@ -18,7 +18,7 @@ tOne = \relative c' {
 
 	a4.-> a8 a4 \tuplet 3/2 {a,8[( cis8 e8)]} |
 	a4-> a4-> a4-> a4-> |
-	a8.-> a16 a8 a8 b4.-> b8 |
+  a8.-> a16 a8 a8 b4.-> b8 |
 	cis2->~ cis8 r8 r4 |
 
 	cis4.-> cis8 cis4 \tuplet 3/2 {cis,8[( e8 gis8])} |
@@ -32,7 +32,7 @@ tOne = \relative c' {
 	fis2. r4 |
 
 	e1~ |
-	e4 f4->^\markup{\italic{più \dynamic f}} fis4-> g4-> |
+	e4 f4->^\markup{\translate #'(-6 . 0) \italic{più \dynamic f}} fis4-> g4-> |
 	gis2->( fis4->) \once \override NoteColumn.force-hshift = #0.6 e4-> |
 	a2.-> r4
 }
@@ -104,10 +104,10 @@ bTwo = \relative c' {
 	d4.-> d8 d4-. d4-. |
 	cis8.-. a16 e'4-. r4  e4->~ |
 	e8. e16 e8 e8 fis4. fis8 |
-	a2. r4 | 
+	a2. r4 |
 
 	gis4( cis4 b4 a4 |
-	gis4) g4->_\markup{\italic{più \dynamic f}} fis4-> f4-> |
+	gis4) g4->_\markup{\translate #'(-6 . 0) \italic{più \dynamic f}} fis4-> f4-> |
 	e2.-> e4-> |
 	<e a,>2. r4
 }

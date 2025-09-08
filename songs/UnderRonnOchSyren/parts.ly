@@ -32,7 +32,7 @@ tOne = \relative c' {
 		des8. ges16 f8 es4 des8 |
 		c4. ces4 \once \override NoteHead.font-size = #-4 ces8 |
 		bes8. es16 aes8 ges4 f8 |
-		ges4. r4. |
+		ges4. s4. |
 
 		ges8. f16 es8 es4 d8 |
 		f4 ges8 f8( es4) |
@@ -42,7 +42,7 @@ tOne = \relative c' {
 		des8.-\markup{\translate #'(-6 . 1.5) \italic{mel.}} ges16 f8 es4 des8 |
 		c4. ces4. |
 		bes8. es16 aes8-\markup{\italic {dim e un poco rit. smorz.}} ges4 f8 |
-		ges4. r4. |
+		ges4. s4. |
 	}
 }
 
@@ -84,7 +84,7 @@ bOne = \relative c' {
 		ges8. bes16 bes8 ges4 ges8 |
 		ges4. f4 \once \override NoteHead.font-size = #-4 f8 |
 		ges8. \once \override NoteHead.font-size = #-4 ges16 es8 des4 des8 |
-		des4. r4. |
+		des4. s4. |
 
 		bes'8.^\markup{\translate #'(-7 . -2) \italic{mel.} \translate #'(-5 . -2) \dynamic mf} aes16 bes8 ces4 aes8 |
 		f4 bes8 aes8( ges4) |
@@ -94,7 +94,7 @@ bOne = \relative c' {
 		ges8. bes16 aes8 ges4 ges8 |
 		ges4. f4. |
 		ges8. \once \override NoteHead.font-size = #-4 ges16 es8 des8.[ bes'16] aes8 |
-		ges4. r4. |
+		ges4. s4. |
 	}
 }
 

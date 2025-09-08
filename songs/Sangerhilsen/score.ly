@@ -79,7 +79,7 @@
 		\column{
 			\line{
 				\concat {¹
-				\italic "Tonen vugger som en"} ska sjungas som:
+				\italic " Tonen vugger som en"} ska sjungas som:
 				\note-by-number #2 #1 #1.0
 				\note-by-number #3 #0 #1.0
 				\note-by-number #3 #1 #1.0
@@ -89,14 +89,14 @@
 			}
 			\line{
 				\concat {²
-				\italic "Tonevæld"} ska sjungas som:
+				\italic " Tonevæld"} ska sjungas som:
 				\note-by-number #3 #1 #1.0
 				\note-by-number #4 #0 #1.0
 				\note-by-number #2 #0 #1.0
 			}
 			\line{
 				\concat {³
-				\italic "Sjæl i Sjæl"} ska sjungas som:
+				\italic " Sjæl i Sjæl"} ska sjungas som:
 				\note-by-number #3 #1 #1.0
 				\note-by-number #4 #0 #1.0
 				\note-by-number #2 #0 #1.0
