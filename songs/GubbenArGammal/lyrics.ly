@@ -17,7 +17,7 @@ bTwoLyric = \lyricmode {
 	gub -- ben han är gam -- mal,
 	\markup{\italic{sim.}}
 
-	\repeat unfold 65 {\skip 1}
+	\repeat unfold 70 {\skip 1}
 	gub -- ben är gam -- mal.
 
 	Gub -- ben han är gam -- mal,
