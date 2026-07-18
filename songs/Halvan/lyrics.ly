@@ -28,6 +28,5 @@ bTwoLyric = \lyricmode {
 
 	Det ärv -- da vi -- king -- sin -- ne
 	till su -- pen trår i -- gen
-	och he -- lans min -- ne i hal -- van går i -- gen.
-	hal -- van går i -- gen.
+	och he -- lans min -- ne i 
 }

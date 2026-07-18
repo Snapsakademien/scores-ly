@@ -7,6 +7,9 @@
 
 \bookOutputName "BortAlltVadOroGor"
 \pageHeader
+\paper {
+  page-count = 1
+}
 
 \include "parts.ly"
 \include "lyrics.ly"

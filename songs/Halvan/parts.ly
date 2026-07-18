@@ -5,15 +5,15 @@ global = {
 
 system = \relative c' {
 	\partial 4
-	\override DynamicLineSpanner.staff-padding = #3
+%	\override DynamicLineSpanner.staff-padding = #3
 
 	\repeat volta 2 {
 		\set Timing.measureLength = #(ly:make-moment 1/4)
 		s4 
 		\set Timing.measureLength = #(ly:make-moment 4/4)
 
-		s1 | s1 | s1 | s2. s4\ff | 
-		s1 | s2. s4\p | s2. s8. s16\f | s2.
+		s1 | s1 | s1 | s2. \once \override DynamicText.X-offset = #-3 s4\ff | 
+		s1 | s2. \once \override DynamicText.X-offset = #-2 s4\p | s2. s8. \once \override DynamicText.X-offset = #-2 s16\f | s2.
 	}
 	\repeat volta 2 {
 		s4 |
@@ -31,7 +31,7 @@ tOne = \relative c' {
 	\override MultiMeasureRest.staff-position = #0
 	\autoBeamOff
 	\partial 4
-	\override DynamicLineSpanner.staff-padding = #3
+%	\override DynamicLineSpanner.staff-padding = #3
 
 	\repeat volta 2 {
 		\set Timing.measureLength = #(ly:make-moment 1/4)
@@ -46,7 +46,9 @@ tOne = \relative c' {
 		es2. 
 	}
 	\repeat volta 2 {
-		es4^\f |
+		\set Timing.measureLength = #(ly:make-moment 1/4)
+		\once \override DynamicText.X-offset = #-1 es4^\f |
+		\set Timing.measureLength = #(ly:make-moment 4/4)
 		
 		es2 es2 |
 		es4 es4 es4 e8 e8 |
@@ -80,7 +82,9 @@ tTwo = \relative c' {
 		bes2. 
 	}
 	\repeat volta 2 {
+		\set Timing.measureLength = #(ly:make-moment 1/4)
 		r4 |
+		\set Timing.measureLength = #(ly:make-moment 4/4)
 		
 		des4 bes8 bes8 g4 bes4 |
 		aes4 c4 r2 |
@@ -117,7 +121,9 @@ bOne = \relative c {
 		g2. 
 	}
 	\repeat volta 2 {
+		\set Timing.measureLength = #(ly:make-moment 1/4)
 		s4 |
+		\set Timing.measureLength = #(ly:make-moment 4/4)
 		
 		des4( bes'4) r2 |
 		bes4 g8 g8 es4 des4 |
@@ -154,7 +160,9 @@ bTwo = \relative c {
 		bes2.
 	}
 	\repeat volta 2 {
+		\set Timing.measureLength = #(ly:make-moment 1/4)
 		\once \override Voice.Rest.staff-position = #0 r4 |
+		\set Timing.measureLength = #(ly:make-moment 4/4)
 		r2 r4 es4 |
 		aes,4 aes4 r4 c8 c8 |
 		f,4 f4 r4 f'4 |

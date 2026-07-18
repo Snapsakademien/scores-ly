@@ -5,13 +5,13 @@ global = {
 
 system = \relative c' {
 
-	s2.\f | s2. | s2  s4\< | s2. |
-	s2.\f | s2. | s2.\p | s2. |
+	\once \override DynamicText.X-offset = #-2 s2.\f | s2. | s2  s4\< | s2. |
+	\once \override DynamicText.X-offset = #-2 s2.\f | s2. | s2.\p | s2. |
 	s2. | s2. | s2. | s2. |
-	s2.\ff | s2 s8 s8\pp | s2. | s2. \bar "||"
+	\once \override DynamicText.X-offset = #-4 s2.\ff | s2 s8 s8\pp | s2. | s2. \bar "||"
 
 	s2. | s2. | s2.\p | s2.\<  |
-	s2.\mf | s2. | s2.\p | s2 s8  s8\mf-\< |
+	s2.\mf | s2. | \once \override DynamicText.X-offset = #-2 s2.\p | s2 s8  s8\mf-\< |
 	s2 s8 s8\! | s2. | s2. | s2. |
 	s2. | s2. | s2. | s2.  |
 
@@ -66,7 +66,7 @@ tOne = \relative c'' {
 	R2. |
   \override Voice.Rest.staff-position = #0
 
-	r4 aes2^\ff-\fermata |
+	r4 \once \override DynamicText.X-offset = #-4 aes2^\ff-\fermata |
 	es4 \tuplet 3/2 {es8  r8  es8} \tuplet 3/2 {des8 es8 des8} |
 	ces4 \tuplet 3/2  {ces8  r8 bes8} \tuplet 3/2 {bes8-> ces8-> bes8->} |
 	es4( bes'2\fermata) |
@@ -114,7 +114,7 @@ tTwo = \relative c' {
 	\once \override Voice.MultiMeasureRest.staff-position = #-4 R2._\fermata |
 	\override Voice.Rest.staff-position = #-6
 
-	r4 r4  aes8->-\pp bes8 |
+	r4 r4  \once \override DynamicText.X-offset = #-4 aes8->-\pp bes8 |
 	ces8 des8 es8 des8 bes8 ces16[ bes16] |
 	\override Voice.Rest.staff-position = #-4
 	aes8 r8 r2 |
@@ -169,12 +169,12 @@ bOne = \relative c' {
 	R2. |
 	R2. |
 
-	r4 aes8->^\pp bes8 ces8 bes8 |
+	r4 \once \override DynamicText.X-offset = #-3 aes8->^\pp bes8 ces8 bes8 |
 	aes4. bes8 g8 g8 |
 	aes8 \override Voice.Rest.staff-position = #6 r8 r4 r4^\markup{\italic rallent.} |
 	R2.\fermata |
 
-	bes2.^\ff-\fermata |
+	\once \override DynamicText.X-offset = #-4 bes2.^\ff-\fermata |
 	\override Voice.Rest.staff-position = #4
 	ces4 \tuplet 3/2 {ces8 r8 ces8} \tuplet 3/2 {bes8 ces8 bes8} |
 	aes4 \tuplet 3/2 {aes8 \once \override Voice.Rest.staff-position = #0 r8 bes8} \tuplet 3/2 {bes8 ces8 bes8} |
@@ -221,11 +221,11 @@ bTwo = \relative c' {
 	des8 des8 \tuplet 3/2 {fes8 ges8 fes8} es8_\fermata r8 |
 
 	R2. |
-	aes,8->-\pp bes8 ces8 des8 es8 des8 |
+	\once \override DynamicText.X-offset = #-4 aes,8->-\pp bes8 ces8 des8 es8 des8 |
 	fes8 ges16[ fes16] ces8 bes8 des8 es16[ des16] |
 	aes8 g8 bes8 ces16[ bes16] fes4\fermata |
 
-	r4 bes2_\ff-\fermata |
+	r4 \once \override DynamicText.X-offset = #-4 bes2_\ff-\fermata |
 	es4 es8 r8 r8 es8 |
 	fes4 \tuplet 3/2 {fes8 \once	\override Voice.Rest.staff-position = #0 r8 bes8} \tuplet 3/2 {bes8-> ces8-> bes8->} |
 	es,2.\fermata |

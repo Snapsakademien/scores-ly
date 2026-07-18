@@ -5,19 +5,19 @@ global = {
 
 tenorDynamics = \relative c {
 	\override DynamicLineSpanner.staff-padding = #3
-	s1\f |
+	\once \override DynamicText.X-offset = #-1 s1\f |
 	s1 | \break
 	s1 |
 	s1 |
 
 	s4\p\< s4 s2\! \break
 	s4\< s4 s2\! |
-	s4\f s2. |
+	\once \override DynamicText.X-offset = #-1 s4\f s2. |
 	s1 | \break
 
-	s4\mf s2. |
+	\once \override DynamicText.X-offset = #-2 s4\mf s2. |
 	s1 |
-	s2 s4\ff s4 |
+	s2 \once \override DynamicText.X-offset = #-3 s4\ff s4 |
 	s1
 	\bar "|."
 }
@@ -41,9 +41,9 @@ bTwoDynamics = \relative c {
 	s1
 	s1\f
 
-	s2 s8\mf s4.
+	s2 \once \override DynamicText.X-offset = #-2 s8\mf s4.
 	s1 | s1
-	s2 s2\ff
+	s2 \once \override DynamicText.X-offset = #-4 s2\ff
 
 }
 

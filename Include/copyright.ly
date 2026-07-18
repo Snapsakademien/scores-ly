@@ -8,18 +8,23 @@ arJagFoddHeader = \header {
 	arranger = "J.P. Cronhamn"
 }
 
-duGamlaDuFriaHeader = \header {
-	title = "Du gamla, du fria"
-	composer = "Trad."
-	poet = "Richard Dybeck"
-	arranger =  "Ivar Widén"
-}
-
 aveMariaRachmaninoveHeader =	\header {
 	title = "Bogoroditse Djevo"
 	subtitle = "ur All-night Vigil"
 	composer = "Sergej Rachmaninov"
 	arranger = "Bearb. för manskör av Joakim Sandström"
+}
+
+bacchiHarolderHeader = \header {
+	title = "FS 1 - Om Bacchi adelsmän och härolder"
+	composer = "Carl-Michael Bellman"
+}
+
+duGamlaDuFriaHeader = \header {
+	title = "Du gamla, du fria"
+	composer = "Trad."
+	poet = "Richard Dybeck"
+	arranger =  "Ivar Widén"
 }
 
 evigVilaHeader = \header {
@@ -29,11 +34,6 @@ evigVilaHeader = \header {
 
 fjarilnVingadHeader = \header {
 	title = "FS 64 - Fjäriln vingad"
-	composer = "Carl-Michael Bellman"
-}
-
-bacchiHarolderHeader = \header {
-	title = "FS 1 - Om Bacchi adelsmän och härolder"
 	composer = "Carl-Michael Bellman"
 }
 
@@ -141,7 +141,7 @@ norrlandHeader = \header {
 
 sangarhyllningHeader = \header {
 	title = "Sångarhyllning"
-	composer = "G.W."
+	composer = "Bengt Lindsjö/G.W."
 %		arranger = "Filip Bengtsson"
 }
 
@@ -244,9 +244,4 @@ varmlandsvisanHeader = \header {
 	title = "Ack Värmland du sköna"
 	composer = "Anders Fryxell"
 	poet = "Fredrik August Dahlgren"
-}
-
-tillMinaVannerHeader = 	\header {
-	title = "Till mina vänner"
-	composer = "Erik Gustaf Geijer"
 }
