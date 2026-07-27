@@ -123,6 +123,7 @@ metsamiehenJoumalauluHeader = \header {
 
 festenKanBorjaHeader = \header {
 	title = "Festen kan börja"
+	subtitle = "Molltoner från Norrland"
 	composer = "Trad."
 	arranger =  "A. Jahnke"
 }
@@ -135,6 +136,7 @@ norgesFjeldeHeader = \header {
 
 norgesBedsteHeader = \header {
 	title = "Norska Halvan"
+	subtitle = "Norges Fjelde"
 	composer = "Halfdan Kjerulf"
 }
 
