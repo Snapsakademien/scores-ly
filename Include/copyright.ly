@@ -3,7 +3,8 @@ pageHeader = \header {
 	}
 
 arJagFoddHeader = \header {
-	title = "FS 16 - Är jag född så vill jag leva"
+	title = "Är jag född så vill jag leva"
+	subtitle = "Fredmans Sång 16"
 	composer = "Carl-Michael Bellman"
 	arranger = "J.P. Cronhamn"
 }
@@ -16,7 +17,8 @@ aveMariaRachmaninoveHeader =	\header {
 }
 
 bacchiHarolderHeader = \header {
-	title = "FS 1 - Om Bacchi adelsmän och härolder"
+	title = "Om Bacchi adelsmän och härolder"
+	subtitle = "Fredmans Sång 1"
 	composer = "Carl-Michael Bellman"
 }
 
@@ -33,7 +35,8 @@ evigVilaHeader = \header {
 }
 
 fjarilnVingadHeader = \header {
-	title = "FS 64 - Fjäriln vingad"
+	title = "Fjäriln vingad"
+	subtitle = "Fredmans Sång 64"
 	composer = "Carl-Michael Bellman"
 }
 
@@ -53,6 +56,7 @@ angbatssangHeader = \header {
 
 bortAlltVadOroGorHeader = \header {
 	title = "Bort allt vad oro gör"
+	subtitle = "ur Bacchi Tempel"
 	composer = "Carl-Michael Bellman"
 	arranger = "Johan Alfred Ahlström"
 }
@@ -65,7 +69,7 @@ daneLiksomAskanHeader = \header {
 
 dasKonigsliedHeader = \header {
 	title = "Das Königslied"
-	subtitle = "Det var en gång en kung"
+%	subtitle = "Det var en gång en kung"
 	composer = "Adolf Eduard Marschner"
 	text =  "Frans von Kobell"
 }
@@ -77,7 +81,8 @@ finskaHalvanHeader = \header {
 }
 
 gutarBadNattOchDagHeader = \header {
-	title = "FE 1 - Gutår båd natt och dag"
+	title = "Gutår båd natt och dag"
+	subtitle = "Fredmans Epistel 1"
 	composer = "Carl-Michael Bellman"
 	arranger = "J.P. Cronhamn"
 }
@@ -171,7 +176,8 @@ varmlandKantatHeader = \header {
 }
 
 varRedoHeader = \header {
-	title = "FS 27 - Var redo"
+	title = "Var redo"
+	subtitle = "Fredmans Sång 27"
 	composer = "Carl-Michael Bellman"
 	arranger =  "J.P. Cronhamn"
 }
@@ -184,7 +190,8 @@ gladSasomHeader = \header {
 }
 
 gubbenArGammalHeader = \header {
-	title = "FE 27 - Gubben är gammal"
+	title = "Gubben är gammal"
+	subtitle = "Fredmans Epistel 27"
 	composer = "Carl-Michael Bellman"
 	arranger = "Johan Alfred Ahlström"
 }
@@ -196,7 +203,8 @@ integerVitaeHeader = 	\header {
 }
 
 karasteBroderHeader = \header {
-	title = "FE 9 - Käraste bröder"
+	title = "Käraste bröder"
+	subtitle = "Fredmans Epistel 9"
 	composer = "Carl-Michael Bellman"
 	arranger = "Johan Alfred Ahlström"
 }
@@ -219,7 +227,8 @@ underRonnOchSyrenHeader = \header {
 	}
 
 saLunkaViHeader =	\header {
-	title = "FS 21 - Så lunka vi så småningom"
+	title = "Så lunka vi så småningom"
+	subtitle = "Fredmans Sång 21"
 	composer = "Carl-Michael Bellman"
 	arranger = "J.P. Cronhamn"
 }

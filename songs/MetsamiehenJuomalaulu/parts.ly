@@ -193,7 +193,7 @@ bOne = \relative c' {
 	cis2.) b4 bes8 |
 
 	a2. a4. |
-	a4.~ a8 r8 a8 a8. a16 a8 |
+	a4.~ a8 r8 \footnote "*" #'(-1 . 2) \markup{\override #'(line-width . 110) \column {\line{" "} \wordwrap{* Sjung om slutet härifrån ett tonsteg upp från föregående varv tills förstabas inte längre når upp till sin höga ton. Vid framträdanden kan förstabas med fördel illustrera för publiken hur jobbigt det är att komma upp efter ett par höjningar samtidigt som publiken uppmanas att heja på dem.}}} a8 a8. a16 a8 |
 	d2.~ d4.( |
 	cis2.) b4 bes8 |
 

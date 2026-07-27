@@ -61,7 +61,7 @@ tOne = \relative c {
 		g'4 g8 f8 g8 aes8 |
 		g8 f8 f2 |
 		es4 es8 d8 es8 f8 |
-		es8 \footnote "*" #'(0 . 0) \markup{\override #'(line-width . 110) \wordwrap{* I Ahlströms/Cronhamns original anges tonerna som d. I Bellmans original likt de allra flesta övriga arrangemang är tonerna dock sänkta.}} des8 des2 |
+		es8 \footnote "*" #'(-1 . 2) \markup{\override #'(line-width . 110) \column {\line{" "} \wordwrap{* I Ahlströms/Cronhamns original anges tonerna som d. I Bellmans original likt de allra flesta övriga arrangemang är tonerna dock sänkta.}}} des8 des2 |
 
 		c4 c4 f4 |
 		bes,4 bes4 es4 |
