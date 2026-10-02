@@ -71,7 +71,7 @@ dasKonigsliedHeader = \header {
 	title = "Das Königslied"
 %	subtitle = "Det var en gång en kung"
 	composer = "Adolf Eduard Marschner"
-	text =  "Frans von Kobell"
+	poet =  "Frans von Kobell"
 }
 
 finskaHalvanHeader = \header {
@@ -112,7 +112,7 @@ islandHeader = \header {
 kungKarlHeader = \header {
 	title = "Kung Karl"
 	composer = "Otto Westerman"
-	Arranger =  "Eric Jacob Arrhén von Kapfelmann"
+	arranger =  "Eric Jacob Arrhén von Kapfelmann"
 	poet = "Esias Tegnér"
 }
 
@@ -125,7 +125,7 @@ festenKanBorjaHeader = \header {
 	title = "Festen kan börja"
 	subtitle = "Molltoner från Norrland"
 	composer = "Trad."
-	arranger =  "A. Jahnke"
+	arranger =  "August Jahnke"
 }
 
 norgesFjeldeHeader = \header {
@@ -181,7 +181,7 @@ varRedoHeader = \header {
 	title = "Var redo"
 	subtitle = "Fredmans Sång 27"
 	composer = "Carl-Michael Bellman"
-	arranger =  "J.P. Cronhamn"
+	arranger =  "Johan Peter Cronhamn"
 }
 
 gladSasomHeader = \header {

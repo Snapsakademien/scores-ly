@@ -9,7 +9,7 @@ LyricTtwo = \lyricmode {
 	fröj -- dar gom -- men  ma -- gen
 
 	flas --  kan op -- pe
-	sis --  ta drop -- pe,
+	sis --  ta drop -- pe.
 	i  dig häll!
 	I  dig  hal -- van  häll!
 }
@@ -17,12 +17,12 @@ LyricTtwo = \lyricmode {
 LyricBone = \lyricmode {
 	\repeat unfold 25 {\skip 1}
 	Har du op -- pe,
-	töm dess drop -- pe
+	töm dess drop -- pe.
 }
 
 LyricBtwoOne = \lyricmode {
 	\repeat unfold 25 {\skip 1}
 	flas --  kan op  -- pe
-	sis  -- ta drop -- pe
+	sis  -- ta drop -- pe.
 	Hal --  van
 }

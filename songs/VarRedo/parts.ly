@@ -32,7 +32,7 @@ tOne = \relative c' {
 	}
 	\break
 	\repeat volta 2 {
-		\bar ".|:"
+%		\bar ".|:"
 		cis8 e16 d16 cis8 e8 |
 		cis8 e8  cis8 b8 |
 		a8 cis16 b16 a8 cis8 |
@@ -70,7 +70,6 @@ tTwo = \relative c' {
 		}
 	}
 	\repeat volta 2 {
-		\bar ".|:"
 		cis8 e16 d16 cis8 e8 |
 		cis8 e8  cis8 b8 |
 		a8 cis16 b16 a8 cis8 |
@@ -105,7 +104,6 @@ bOne = \relative c' {
 		}
 	}
 	\repeat volta 2 {
-		\bar ".|:"
 		a8 cis16 b16 a8 cis8 |
 		a8 cis8 a8 gis8 |
 		fis8 a16 gis16 fis8 a8 |
@@ -141,7 +139,6 @@ bTwo = \relative c {
 		}
 	}
 	\repeat volta 2 {
-		\bar ".|:"
 		a'8 cis16 b16 a8 cis8 |
 		a8 cis8  a8 e8 |
 		fis8 a16 gis16 fis8 a8 |

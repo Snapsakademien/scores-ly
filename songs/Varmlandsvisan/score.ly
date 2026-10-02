@@ -26,6 +26,10 @@
 		}
 		\new Lyrics  {
 			\lyricsto "tOne"
+			\tOneLyricTwo
+		}
+		\new Lyrics  {
+			\lyricsto "tOne"
 			\tOneLyricThree
 		}
 		\new Staff = "staff" <<

@@ -12,7 +12,7 @@ LyricTtwoOne = \lyricmode {
 	\set stanza = #"1."
 
 	Ein kö -- nig ist der Wein,
-	en  Kö -- ig ist der Wein!
+	ein  Kö -- ig ist der Wein!
 	Mit  Se  -- gen reich be  -- la  -- den ist er  von  Got -- tes Gna --  den,
 	und man -- cher Pur  -- pur sein.
 	in Kö -- nig, ein Kö  -- nig,

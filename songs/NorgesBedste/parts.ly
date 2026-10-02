@@ -88,7 +88,7 @@ bOne = \relative c {
 	fis4. fis8  a4 a4 |
 	a4 fis4 r2 |
 
-	d'2^\markup{\right-align \italic "ben marc"} d,2 |
+	\once \override NoteColumn.X-offset = #1.5 d'2^\markup{\translate #'(-9 . 0) \italic "ben marc"} d,2 |
 	b'2 a2 |
 	a2 a,2 |
 	g'2 fis2 |

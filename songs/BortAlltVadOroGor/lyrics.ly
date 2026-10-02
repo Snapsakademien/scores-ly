@@ -7,7 +7,7 @@ tOneLyricOne = \lyricmode {
 	\repeat unfold 28 { \skip 1 }
 
 	Gran -- ne, gör du just som jag gör!
-	Vet den -- na ol -- jan ger hu -- mör.
+	Vet, den -- na ol -- jan ger hu -- mör.
 }
 
 tTwoLyricOne = \lyricmode {
@@ -16,8 +16,8 @@ tTwoLyricOne = \lyricmode {
 	Bäst att man väl -- jar bland des -- sa bu -- tel -- jer sin mag -- li -- kör.
 
 	Gran -- ne, gör du just som jag gör!
-	Vet den -- na ol -- jan ger hu -- mör.
-	Vad det var läc -- kert vad var det?
+	Vet, den -- na ol -- jan ger hu -- mör.
+	Vad det var läc -- kert! vad var det?
 	Rhenskt blec -- kert? &erqq;Oui mon -- seig -- neur!&erqq;
 }
 
@@ -27,7 +27,7 @@ tTwoLyricTwo = \lyricmode {
 	Låt oss bli ras -- ka och töm -- ma vår flas -- ka bland brö -- der -- na!
 
 	Gran -- ne, gör du just som jag gör!
-	Vet den -- na ol -- jan ger hu -- mör.
-	Vad det var mäk -- tigt vad var det?
+	Vet, den -- na ol -- jan ger hu -- mör.
+	Vad det var mäk -- tigt! vad var det?
 	&erqq;Jo, präk -- tigt!&erqq; Ma -- la -- ga? &erqq;Ja!&erqq;
 }
