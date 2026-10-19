@@ -16,10 +16,10 @@ tOneLyricTwo = \lyricmode {
 	Där klap - par det hjär - tan med he -- der och tro
 	så fas -- ta som ber - ge -- nas kär -- na.
 
-	Och var och en svensk ut -- i Sve -- a ri -- kes land,
+	Och var och en svensk ut -- i Svea ri -- kes land,
 
-	som kom -- mer att gäs -- ta vid Klar -- äl -- vens strand,
-	han fin -- ner blott brö -- der och syst -- rar.
+	som kom - mer att gäs -- ta vid Klar - äl -- vens strand,
+	han fin -- ner blott brö - der och syst -- rar.
 }
 
 tOneLyricThree = \lyricmode {
